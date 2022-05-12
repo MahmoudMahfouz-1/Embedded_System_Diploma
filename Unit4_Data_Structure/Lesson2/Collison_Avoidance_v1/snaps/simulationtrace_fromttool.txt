@@ -1,0 +1,454 @@
+0 bunchid:0 @0/ 0: start ID=13 / top level operator
+ nexts= 0:avatar transition/ ID=37  in block Collision_Avoidance (silent)
+attributes=0 0 50 
+1 bunchid:0 @0/ 0: avatar transition ID=37 / top level operator
+ value:Empty transition
+ nexts= 0:waiting/ ID=12  in block Collision_Avoidance (silent)
+attributes=0 0 50 
+2 bunchid:0 @0/ 0: waiting ID=12 / top level operator
+ nexts= 0:avatar transition/ ID=19  in block Collision_Avoidance (silent)
+attributes=0 0 50 
+3 bunchid:0 @0/ 0: avatar transition ID=19 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=15  in block Collision_Avoidance
+attributes=0 0 50 
+4 bunchid:0 @0/ 0: random ID=15 / top level operator
+ nexts= 0:avatar transition/ ID=18  in block Collision_Avoidance
+attributes=0 50 50 
+action#0: distance = 50 
+5 bunchid:1 @0/ 0: avatar transition ID=18 / top level operator
+ value:Empty transition
+ nexts= 0:choice__1/ ID=11  in block Collision_Avoidance (silent)
+attributes=0 50 50 
+6 bunchid:1 @0/ 0: choice__1 ID=11 / top level operator
+ nexts= 0:avatar transition/ ID=32 1:avatar transition/ ID=38  in block Collision_Avoidance (silent)
+attributes=0 50 50 
+7 bunchid:1 @0/ 0: avatar transition ID=32 / top level operator
+ value:Transition (guard=distance<=threshold, ...)
+ nexts= 0:waiting/ ID=12 
+speed = 0 / guard distance<=threshold /  in block Collision_Avoidance
+attributes=0 50 50 
+action#0: speed = 0 
+8 bunchid:2 @0/ 0: waiting ID=12 / top level operator
+ nexts= 0:avatar transition/ ID=19  in block Collision_Avoidance (silent)
+attributes=0 50 50 
+9 bunchid:2 @0/ 0: avatar transition ID=19 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=15  in block Collision_Avoidance
+attributes=0 50 50 
+10 bunchid:2 @0/ 0: random ID=15 / top level operator
+ nexts= 0:avatar transition/ ID=18  in block Collision_Avoidance
+attributes=0 49 50 
+action#0: distance = 49 
+11 bunchid:3 @0/ 0: avatar transition ID=18 / top level operator
+ value:Empty transition
+ nexts= 0:choice__1/ ID=11  in block Collision_Avoidance (silent)
+attributes=0 49 50 
+12 bunchid:3 @0/ 0: choice__1 ID=11 / top level operator
+ nexts= 0:avatar transition/ ID=32 1:avatar transition/ ID=38  in block Collision_Avoidance (silent)
+attributes=0 49 50 
+13 bunchid:3 @0/ 0: avatar transition ID=32 / top level operator
+ value:Transition (guard=distance<=threshold, ...)
+ nexts= 0:waiting/ ID=12 
+speed = 0 / guard distance<=threshold /  in block Collision_Avoidance
+attributes=0 49 50 
+action#0: speed = 0 
+14 bunchid:4 @0/ 0: waiting ID=12 / top level operator
+ nexts= 0:avatar transition/ ID=19  in block Collision_Avoidance (silent)
+attributes=0 49 50 
+15 bunchid:4 @0/ 0: avatar transition ID=19 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=15  in block Collision_Avoidance
+attributes=0 49 50 
+16 bunchid:4 @0/ 0: random ID=15 / top level operator
+ nexts= 0:avatar transition/ ID=18  in block Collision_Avoidance
+attributes=0 52 50 
+action#0: distance = 52 
+17 bunchid:5 @0/ 0: avatar transition ID=18 / top level operator
+ value:Empty transition
+ nexts= 0:choice__1/ ID=11  in block Collision_Avoidance (silent)
+attributes=0 52 50 
+18 bunchid:5 @0/ 0: choice__1 ID=11 / top level operator
+ nexts= 0:avatar transition/ ID=32 1:avatar transition/ ID=38  in block Collision_Avoidance (silent)
+attributes=0 52 50 
+19 bunchid:5 @0/ 0: avatar transition ID=38 / top level operator
+ value:Empty transition
+ nexts= 0:driving/ ID=10  in block Collision_Avoidance (silent)
+attributes=0 52 50 
+20 bunchid:5 @0/ 0: driving ID=10 / top level operator
+ nexts= 0:avatar transition/ ID=16  in block Collision_Avoidance (silent)
+attributes=0 52 50 
+21 bunchid:5 @0/ 0: avatar transition ID=16 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=14  in block Collision_Avoidance
+attributes=0 52 50 
+22 bunchid:5 @0/ 0: random ID=14 / top level operator
+ nexts= 0:avatar transition/ ID=17  in block Collision_Avoidance
+attributes=0 47 50 
+action#0: distance = 47 
+23 bunchid:6 @0/ 0: avatar transition ID=17 / top level operator
+ value:Empty transition
+ nexts= 0:choice__0/ ID=9  in block Collision_Avoidance (silent)
+attributes=0 47 50 
+24 bunchid:6 @0/ 0: choice__0 ID=9 / top level operator
+ nexts= 0:avatar transition/ ID=20 1:avatar transition/ ID=26  in block Collision_Avoidance (silent)
+attributes=0 47 50 
+25 bunchid:6 @0/ 0: avatar transition ID=20 / top level operator
+ value:Transition (guard=distance<=threshold, ...)
+ nexts= 0:waiting/ ID=12 
+speed = 0 / guard distance<=threshold /  in block Collision_Avoidance
+attributes=0 47 50 
+action#0: speed = 0 
+26 bunchid:7 @0/ 0: waiting ID=12 / top level operator
+ nexts= 0:avatar transition/ ID=19  in block Collision_Avoidance (silent)
+attributes=0 47 50 
+27 bunchid:7 @0/ 0: avatar transition ID=19 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=15  in block Collision_Avoidance
+attributes=0 47 50 
+28 bunchid:7 @0/ 0: random ID=15 / top level operator
+ nexts= 0:avatar transition/ ID=18  in block Collision_Avoidance
+attributes=0 51 50 
+action#0: distance = 51 
+29 bunchid:8 @0/ 0: avatar transition ID=18 / top level operator
+ value:Empty transition
+ nexts= 0:choice__1/ ID=11  in block Collision_Avoidance (silent)
+attributes=0 51 50 
+30 bunchid:8 @0/ 0: choice__1 ID=11 / top level operator
+ nexts= 0:avatar transition/ ID=32 1:avatar transition/ ID=38  in block Collision_Avoidance (silent)
+attributes=0 51 50 
+31 bunchid:8 @0/ 0: avatar transition ID=38 / top level operator
+ value:Empty transition
+ nexts= 0:driving/ ID=10  in block Collision_Avoidance (silent)
+attributes=0 51 50 
+32 bunchid:8 @0/ 0: driving ID=10 / top level operator
+ nexts= 0:avatar transition/ ID=16  in block Collision_Avoidance (silent)
+attributes=0 51 50 
+33 bunchid:8 @0/ 0: avatar transition ID=16 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=14  in block Collision_Avoidance
+attributes=0 51 50 
+34 bunchid:8 @0/ 0: random ID=14 / top level operator
+ nexts= 0:avatar transition/ ID=17  in block Collision_Avoidance
+attributes=0 52 50 
+action#0: distance = 52 
+35 bunchid:9 @0/ 0: avatar transition ID=17 / top level operator
+ value:Empty transition
+ nexts= 0:choice__0/ ID=9  in block Collision_Avoidance (silent)
+attributes=0 52 50 
+36 bunchid:9 @0/ 0: choice__0 ID=9 / top level operator
+ nexts= 0:avatar transition/ ID=20 1:avatar transition/ ID=26  in block Collision_Avoidance (silent)
+attributes=0 52 50 
+37 bunchid:9 @0/ 0: avatar transition ID=26 / top level operator
+ value:Transition (guard=distance>threshold, ...)
+ nexts= 0:driving/ ID=10 
+speed = 30 / guard distance>threshold /  in block Collision_Avoidance
+attributes=30 52 50 
+action#0: speed = 30 
+38 bunchid:10 @0/ 0: driving ID=10 / top level operator
+ nexts= 0:avatar transition/ ID=16  in block Collision_Avoidance (silent)
+attributes=30 52 50 
+39 bunchid:10 @0/ 0: avatar transition ID=16 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=14  in block Collision_Avoidance
+attributes=30 52 50 
+40 bunchid:10 @0/ 0: random ID=14 / top level operator
+ nexts= 0:avatar transition/ ID=17  in block Collision_Avoidance
+attributes=30 55 50 
+action#0: distance = 55 
+41 bunchid:11 @0/ 0: avatar transition ID=17 / top level operator
+ value:Empty transition
+ nexts= 0:choice__0/ ID=9  in block Collision_Avoidance (silent)
+attributes=30 55 50 
+42 bunchid:11 @0/ 0: choice__0 ID=9 / top level operator
+ nexts= 0:avatar transition/ ID=20 1:avatar transition/ ID=26  in block Collision_Avoidance (silent)
+attributes=30 55 50 
+43 bunchid:11 @0/ 0: avatar transition ID=26 / top level operator
+ value:Transition (guard=distance>threshold, ...)
+ nexts= 0:driving/ ID=10 
+speed = 30 / guard distance>threshold /  in block Collision_Avoidance
+attributes=30 55 50 
+action#0: speed = 30 
+44 bunchid:12 @0/ 0: driving ID=10 / top level operator
+ nexts= 0:avatar transition/ ID=16  in block Collision_Avoidance (silent)
+attributes=30 55 50 
+45 bunchid:12 @0/ 0: avatar transition ID=16 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=14  in block Collision_Avoidance
+attributes=30 55 50 
+46 bunchid:12 @0/ 0: random ID=14 / top level operator
+ nexts= 0:avatar transition/ ID=17  in block Collision_Avoidance
+attributes=30 50 50 
+action#0: distance = 50 
+47 bunchid:13 @0/ 0: avatar transition ID=17 / top level operator
+ value:Empty transition
+ nexts= 0:choice__0/ ID=9  in block Collision_Avoidance (silent)
+attributes=30 50 50 
+48 bunchid:13 @0/ 0: choice__0 ID=9 / top level operator
+ nexts= 0:avatar transition/ ID=20 1:avatar transition/ ID=26  in block Collision_Avoidance (silent)
+attributes=30 50 50 
+49 bunchid:13 @0/ 0: avatar transition ID=20 / top level operator
+ value:Transition (guard=distance<=threshold, ...)
+ nexts= 0:waiting/ ID=12 
+speed = 0 / guard distance<=threshold /  in block Collision_Avoidance
+attributes=0 50 50 
+action#0: speed = 0 
+50 bunchid:14 @0/ 0: waiting ID=12 / top level operator
+ nexts= 0:avatar transition/ ID=19  in block Collision_Avoidance (silent)
+attributes=0 50 50 
+51 bunchid:14 @0/ 0: avatar transition ID=19 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=15  in block Collision_Avoidance
+attributes=0 50 50 
+52 bunchid:14 @0/ 0: random ID=15 / top level operator
+ nexts= 0:avatar transition/ ID=18  in block Collision_Avoidance
+attributes=0 47 50 
+action#0: distance = 47 
+53 bunchid:15 @0/ 0: avatar transition ID=18 / top level operator
+ value:Empty transition
+ nexts= 0:choice__1/ ID=11  in block Collision_Avoidance (silent)
+attributes=0 47 50 
+54 bunchid:15 @0/ 0: choice__1 ID=11 / top level operator
+ nexts= 0:avatar transition/ ID=32 1:avatar transition/ ID=38  in block Collision_Avoidance (silent)
+attributes=0 47 50 
+55 bunchid:15 @0/ 0: avatar transition ID=38 / top level operator
+ value:Empty transition
+ nexts= 0:driving/ ID=10  in block Collision_Avoidance
+attributes=0 47 50 
+56 bunchid:16 @0/ 0: driving ID=10 / top level operator
+ nexts= 0:avatar transition/ ID=16  in block Collision_Avoidance (silent)
+attributes=0 47 50 
+57 bunchid:16 @0/ 0: avatar transition ID=16 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=14  in block Collision_Avoidance
+attributes=0 47 50 
+58 bunchid:16 @0/ 0: random ID=14 / top level operator
+ nexts= 0:avatar transition/ ID=17  in block Collision_Avoidance
+attributes=0 45 50 
+action#0: distance = 45 
+59 bunchid:17 @0/ 0: avatar transition ID=17 / top level operator
+ value:Empty transition
+ nexts= 0:choice__0/ ID=9  in block Collision_Avoidance (silent)
+attributes=0 45 50 
+60 bunchid:17 @0/ 0: choice__0 ID=9 / top level operator
+ nexts= 0:avatar transition/ ID=20 1:avatar transition/ ID=26  in block Collision_Avoidance (silent)
+attributes=0 45 50 
+61 bunchid:17 @0/ 0: avatar transition ID=20 / top level operator
+ value:Transition (guard=distance<=threshold, ...)
+ nexts= 0:waiting/ ID=12 
+speed = 0 / guard distance<=threshold /  in block Collision_Avoidance
+attributes=0 45 50 
+action#0: speed = 0 
+62 bunchid:18 @0/ 0: waiting ID=12 / top level operator
+ nexts= 0:avatar transition/ ID=19  in block Collision_Avoidance (silent)
+attributes=0 45 50 
+63 bunchid:18 @0/ 0: avatar transition ID=19 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=15  in block Collision_Avoidance
+attributes=0 45 50 
+64 bunchid:18 @0/ 0: random ID=15 / top level operator
+ nexts= 0:avatar transition/ ID=18  in block Collision_Avoidance
+attributes=0 55 50 
+action#0: distance = 55 
+65 bunchid:19 @0/ 0: avatar transition ID=18 / top level operator
+ value:Empty transition
+ nexts= 0:choice__1/ ID=11  in block Collision_Avoidance (silent)
+attributes=0 55 50 
+66 bunchid:19 @0/ 0: choice__1 ID=11 / top level operator
+ nexts= 0:avatar transition/ ID=32 1:avatar transition/ ID=38  in block Collision_Avoidance (silent)
+attributes=0 55 50 
+67 bunchid:19 @0/ 0: avatar transition ID=38 / top level operator
+ value:Empty transition
+ nexts= 0:driving/ ID=10  in block Collision_Avoidance (silent)
+attributes=0 55 50 
+68 bunchid:19 @0/ 0: driving ID=10 / top level operator
+ nexts= 0:avatar transition/ ID=16  in block Collision_Avoidance (silent)
+attributes=0 55 50 
+69 bunchid:19 @0/ 0: avatar transition ID=16 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=14  in block Collision_Avoidance
+attributes=0 55 50 
+70 bunchid:19 @0/ 0: random ID=14 / top level operator
+ nexts= 0:avatar transition/ ID=17  in block Collision_Avoidance
+attributes=0 45 50 
+action#0: distance = 45 
+71 bunchid:20 @0/ 0: avatar transition ID=17 / top level operator
+ value:Empty transition
+ nexts= 0:choice__0/ ID=9  in block Collision_Avoidance (silent)
+attributes=0 45 50 
+72 bunchid:20 @0/ 0: choice__0 ID=9 / top level operator
+ nexts= 0:avatar transition/ ID=20 1:avatar transition/ ID=26  in block Collision_Avoidance (silent)
+attributes=0 45 50 
+73 bunchid:20 @0/ 0: avatar transition ID=20 / top level operator
+ value:Transition (guard=distance<=threshold, ...)
+ nexts= 0:waiting/ ID=12 
+speed = 0 / guard distance<=threshold /  in block Collision_Avoidance
+attributes=0 45 50 
+action#0: speed = 0 
+74 bunchid:21 @0/ 0: waiting ID=12 / top level operator
+ nexts= 0:avatar transition/ ID=19  in block Collision_Avoidance (silent)
+attributes=0 45 50 
+75 bunchid:21 @0/ 0: avatar transition ID=19 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=15  in block Collision_Avoidance
+attributes=0 45 50 
+76 bunchid:21 @0/ 0: random ID=15 / top level operator
+ nexts= 0:avatar transition/ ID=18  in block Collision_Avoidance
+attributes=0 46 50 
+action#0: distance = 46 
+77 bunchid:22 @0/ 0: avatar transition ID=18 / top level operator
+ value:Empty transition
+ nexts= 0:choice__1/ ID=11  in block Collision_Avoidance (silent)
+attributes=0 46 50 
+78 bunchid:22 @0/ 0: choice__1 ID=11 / top level operator
+ nexts= 0:avatar transition/ ID=32 1:avatar transition/ ID=38  in block Collision_Avoidance (silent)
+attributes=0 46 50 
+79 bunchid:22 @0/ 0: avatar transition ID=32 / top level operator
+ value:Transition (guard=distance<=threshold, ...)
+ nexts= 0:waiting/ ID=12 
+speed = 0 / guard distance<=threshold /  in block Collision_Avoidance
+attributes=0 46 50 
+action#0: speed = 0 
+80 bunchid:23 @0/ 0: waiting ID=12 / top level operator
+ nexts= 0:avatar transition/ ID=19  in block Collision_Avoidance (silent)
+attributes=0 46 50 
+81 bunchid:23 @0/ 0: avatar transition ID=19 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=15  in block Collision_Avoidance
+attributes=0 46 50 
+82 bunchid:23 @0/ 0: random ID=15 / top level operator
+ nexts= 0:avatar transition/ ID=18  in block Collision_Avoidance
+attributes=0 45 50 
+action#0: distance = 45 
+83 bunchid:24 @0/ 0: avatar transition ID=18 / top level operator
+ value:Empty transition
+ nexts= 0:choice__1/ ID=11  in block Collision_Avoidance (silent)
+attributes=0 45 50 
+84 bunchid:24 @0/ 0: choice__1 ID=11 / top level operator
+ nexts= 0:avatar transition/ ID=32 1:avatar transition/ ID=38  in block Collision_Avoidance (silent)
+attributes=0 45 50 
+85 bunchid:24 @0/ 0: avatar transition ID=32 / top level operator
+ value:Transition (guard=distance<=threshold, ...)
+ nexts= 0:waiting/ ID=12 
+speed = 0 / guard distance<=threshold /  in block Collision_Avoidance
+attributes=0 45 50 
+action#0: speed = 0 
+86 bunchid:25 @0/ 0: waiting ID=12 / top level operator
+ nexts= 0:avatar transition/ ID=19  in block Collision_Avoidance (silent)
+attributes=0 45 50 
+87 bunchid:25 @0/ 0: avatar transition ID=19 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=15  in block Collision_Avoidance
+attributes=0 45 50 
+88 bunchid:25 @0/ 0: random ID=15 / top level operator
+ nexts= 0:avatar transition/ ID=18  in block Collision_Avoidance
+attributes=0 49 50 
+action#0: distance = 49 
+89 bunchid:26 @0/ 0: avatar transition ID=18 / top level operator
+ value:Empty transition
+ nexts= 0:choice__1/ ID=11  in block Collision_Avoidance (silent)
+attributes=0 49 50 
+90 bunchid:26 @0/ 0: choice__1 ID=11 / top level operator
+ nexts= 0:avatar transition/ ID=32 1:avatar transition/ ID=38  in block Collision_Avoidance (silent)
+attributes=0 49 50 
+91 bunchid:26 @0/ 0: avatar transition ID=32 / top level operator
+ value:Transition (guard=distance<=threshold, ...)
+ nexts= 0:waiting/ ID=12 
+speed = 0 / guard distance<=threshold /  in block Collision_Avoidance
+attributes=0 49 50 
+action#0: speed = 0 
+92 bunchid:27 @0/ 0: waiting ID=12 / top level operator
+ nexts= 0:avatar transition/ ID=19  in block Collision_Avoidance (silent)
+attributes=0 49 50 
+93 bunchid:27 @0/ 0: avatar transition ID=19 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=15  in block Collision_Avoidance
+attributes=0 49 50 
+94 bunchid:27 @0/ 0: random ID=15 / top level operator
+ nexts= 0:avatar transition/ ID=18  in block Collision_Avoidance
+attributes=0 50 50 
+action#0: distance = 50 
+95 bunchid:28 @0/ 0: avatar transition ID=18 / top level operator
+ value:Empty transition
+ nexts= 0:choice__1/ ID=11  in block Collision_Avoidance (silent)
+attributes=0 50 50 
+96 bunchid:28 @0/ 0: choice__1 ID=11 / top level operator
+ nexts= 0:avatar transition/ ID=32 1:avatar transition/ ID=38  in block Collision_Avoidance (silent)
+attributes=0 50 50 
+97 bunchid:28 @0/ 0: avatar transition ID=38 / top level operator
+ value:Empty transition
+ nexts= 0:driving/ ID=10  in block Collision_Avoidance
+attributes=0 50 50 
+98 bunchid:29 @0/ 0: driving ID=10 / top level operator
+ nexts= 0:avatar transition/ ID=16  in block Collision_Avoidance (silent)
+attributes=0 50 50 
+99 bunchid:29 @0/ 0: avatar transition ID=16 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=14  in block Collision_Avoidance
+attributes=0 50 50 
+100 bunchid:29 @0/ 0: random ID=14 / top level operator
+ nexts= 0:avatar transition/ ID=17  in block Collision_Avoidance
+attributes=0 50 50 
+action#0: distance = 50 
+101 bunchid:30 @0/ 0: avatar transition ID=17 / top level operator
+ value:Empty transition
+ nexts= 0:choice__0/ ID=9  in block Collision_Avoidance (silent)
+attributes=0 50 50 
+102 bunchid:30 @0/ 0: choice__0 ID=9 / top level operator
+ nexts= 0:avatar transition/ ID=20 1:avatar transition/ ID=26  in block Collision_Avoidance (silent)
+attributes=0 50 50 
+103 bunchid:30 @0/ 0: avatar transition ID=20 / top level operator
+ value:Transition (guard=distance<=threshold, ...)
+ nexts= 0:waiting/ ID=12 
+speed = 0 / guard distance<=threshold /  in block Collision_Avoidance
+attributes=0 50 50 
+action#0: speed = 0 
+104 bunchid:31 @0/ 0: waiting ID=12 / top level operator
+ nexts= 0:avatar transition/ ID=19  in block Collision_Avoidance (silent)
+attributes=0 50 50 
+105 bunchid:31 @0/ 0: avatar transition ID=19 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=15  in block Collision_Avoidance
+attributes=0 50 50 
+106 bunchid:31 @0/ 0: random ID=15 / top level operator
+ nexts= 0:avatar transition/ ID=18  in block Collision_Avoidance
+attributes=0 52 50 
+action#0: distance = 52 
+107 bunchid:32 @0/ 0: avatar transition ID=18 / top level operator
+ value:Empty transition
+ nexts= 0:choice__1/ ID=11  in block Collision_Avoidance (silent)
+attributes=0 52 50 
+108 bunchid:32 @0/ 0: choice__1 ID=11 / top level operator
+ nexts= 0:avatar transition/ ID=32 1:avatar transition/ ID=38  in block Collision_Avoidance (silent)
+attributes=0 52 50 
+109 bunchid:32 @0/ 0: avatar transition ID=38 / top level operator
+ value:Empty transition
+ nexts= 0:driving/ ID=10  in block Collision_Avoidance (silent)
+attributes=0 52 50 
+110 bunchid:32 @0/ 0: driving ID=10 / top level operator
+ nexts= 0:avatar transition/ ID=16  in block Collision_Avoidance (silent)
+attributes=0 52 50 
+111 bunchid:32 @0/ 0: avatar transition ID=16 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=14  in block Collision_Avoidance
+attributes=0 52 50 
+112 bunchid:32 @0/ 0: random ID=14 / top level operator
+ nexts= 0:avatar transition/ ID=17  in block Collision_Avoidance
+attributes=0 51 50 
+action#0: distance = 51 
+113 bunchid:33 @0/ 0: avatar transition ID=17 / top level operator
+ value:Empty transition
+ nexts= 0:choice__0/ ID=9  in block Collision_Avoidance (silent)
+attributes=0 51 50 
+114 bunchid:33 @0/ 0: choice__0 ID=9 / top level operator
+ nexts= 0:avatar transition/ ID=20 1:avatar transition/ ID=26  in block Collision_Avoidance (silent)
+attributes=0 51 50 
+115 bunchid:33 @0/ 0: avatar transition ID=26 / top level operator
+ value:Transition (guard=distance>threshold, ...)
+ nexts= 0:driving/ ID=10 
+speed = 30 / guard distance>threshold /  in block Collision_Avoidance
+attributes=30 51 50 
+action#0: speed = 30 
+116 bunchid:34 @0/ 0: driving ID=10 / top level operator
+ nexts= 0:avatar transition/ ID=16  in block Collision_Avoidance (silent)
+attributes=30 51 50 

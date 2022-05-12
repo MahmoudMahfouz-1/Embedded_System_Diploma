@@ -1,0 +1,1556 @@
+0 bunchid:0 @0/ 0: start ID=78 / top level operator
+ nexts= 0:avatar transition/ ID=97  in block Collision_Avoidance (silent)
+attributes=0 0 50 
+1 bunchid:0 @0/ 0: start ID=112 / top level operator
+ nexts= 0:avatar transition/ ID=115  in block DC_motor (silent)
+attributes=0 
+2 bunchid:0 @0/ 0: start ID=122 / top level operator
+ nexts= 0:avatar transition/ ID=125  in block Ultrasonic_Sensor (silent)
+attributes=0 
+3 bunchid:0 @0/ 0: avatar transition ID=97 / top level operator
+ value:Empty transition
+ nexts= 0:Waiting/ ID=77  in block Collision_Avoidance (silent)
+attributes=0 0 50 
+4 bunchid:0 @0/ 0: Waiting ID=77 / top level operator
+ nexts= 0:avatar transition/ ID=98  in block Collision_Avoidance (silent)
+attributes=0 0 50 
+5 bunchid:0 @0/ 0: avatar transition ID=115 / top level operator
+ value:Empty transition
+ nexts= 0:Init/ ID=111  in block DC_motor (silent)
+attributes=0 
+6 bunchid:0 @0/ 0: Init ID=111 / top level operator
+ nexts= 0:avatar transition/ ID=114  in block DC_motor (silent)
+attributes=0 
+7 bunchid:0 @0/ 0: avatar transition ID=114 / top level operator
+ value:Empty transition
+ nexts= 0:Idle/ ID=110  in block DC_motor (silent)
+attributes=0 
+8 bunchid:0 @0/ 0: Idle ID=110 / top level operator
+ nexts= 0:avatar transition/ ID=116  in block DC_motor (silent)
+attributes=0 
+9 bunchid:0 @0/ 0: avatar transition ID=125 / top level operator
+ value:Empty transition
+ nexts= 0:Init/ ID=121  in block Ultrasonic_Sensor (silent)
+attributes=0 
+10 bunchid:0 @0/ 0: Init ID=121 / top level operator
+ nexts= 0:avatar transition/ ID=124  in block Ultrasonic_Sensor (silent)
+attributes=0 
+11 bunchid:0 @0/ 0: avatar transition ID=124 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=120  in block Ultrasonic_Sensor (silent)
+attributes=0 
+12 bunchid:0 @0/ 0: busy ID=120 / top level operator
+ nexts= 0:avatar transition/ ID=126  in block Ultrasonic_Sensor (silent)
+attributes=0 
+13 bunchid:0 @0/ 0: avatar transition ID=98 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=75  in block Collision_Avoidance
+attributes=0 0 50 
+14 bunchid:0 @0/ 0: action_on_signal:DC ID=75 / top level operator
+ nexts= 0:avatar transition/ ID=99  in block Collision_Avoidance
+attributes=0 0 50 
+15 bunchid:0 @0/ 0: avatar transition ID=116 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=108  in block DC_motor
+attributes=0 
+16 bunchid:0 @0/ 0: action_on_signal:DC ID=108 / top level operator
+ nexts= 0:avatar transition/ ID=117  in block DC_motor
+attributes=0 
+action#0: 0 
+17 bunchid:1 @0/ 0: avatar transition ID=99 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=74  in block Collision_Avoidance (silent)
+attributes=0 0 50 
+18 bunchid:1 @0/ 0: avatar transition ID=117 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=109  in block DC_motor (silent)
+attributes=0 
+19 bunchid:1 @0/ 0: busy ID=109 / top level operator
+ nexts= 0:avatar transition/ ID=113  in block DC_motor (silent)
+attributes=0 
+20 bunchid:1 @0/ 0: avatar transition ID=113 / top level operator
+ value:Empty transition
+ nexts= 0:Idle/ ID=110  in block DC_motor (silent)
+attributes=0 
+21 bunchid:1 @0/ 0: Idle ID=110 / top level operator
+ nexts= 0:avatar transition/ ID=116  in block DC_motor (silent)
+attributes=0 
+22 bunchid:1 @0/ 0: avatar transition ID=126 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=119  in block Ultrasonic_Sensor
+attributes=0 
+23 bunchid:1 @0/ 0: random ID=119 / top level operator
+ nexts= 0:avatar transition/ ID=127  in block Ultrasonic_Sensor
+attributes=52 
+action#0: distance = 52 
+24 bunchid:2 @0/ 0: avatar transition ID=127 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=118  in block Ultrasonic_Sensor (silent)
+attributes=52 
+25 bunchid:2 @0/ 0: action_on_signal:US ID=118 / top level operator
+ nexts= 0:avatar transition/ ID=123  in block Ultrasonic_Sensor
+attributes=52 
+26 bunchid:2 @0/ 0: action_on_signal:US ID=74 / top level operator
+ nexts= 0:avatar transition/ ID=96  in block Collision_Avoidance
+attributes=0 52 50 
+action#0: 52 
+27 bunchid:3 @0/ 0: avatar transition ID=96 / top level operator
+ value:Empty transition
+ nexts= 0:choice__1/ ID=73  in block Collision_Avoidance (silent)
+attributes=0 52 50 
+28 bunchid:3 @0/ 0: avatar transition ID=123 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=120  in block Ultrasonic_Sensor (silent)
+attributes=52 
+29 bunchid:3 @0/ 0: busy ID=120 / top level operator
+ nexts= 0:avatar transition/ ID=126  in block Ultrasonic_Sensor (silent)
+attributes=52 
+30 bunchid:3 @0/ 0: choice__1 ID=73 / top level operator
+ nexts= 0:avatar transition/ ID=91 1:avatar transition/ ID=100  in block Collision_Avoidance (silent)
+attributes=0 52 50 
+31 bunchid:3 @0/ 0: avatar transition ID=126 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=119  in block Ultrasonic_Sensor
+attributes=52 
+32 bunchid:3 @0/ 0: random ID=119 / top level operator
+ nexts= 0:avatar transition/ ID=127  in block Ultrasonic_Sensor
+attributes=55 
+action#0: distance = 55 
+33 bunchid:4 @0/ 0: avatar transition ID=127 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=118  in block Ultrasonic_Sensor (silent)
+attributes=55 
+34 bunchid:4 @0/ 0: avatar transition ID=100 / top level operator
+ value:Transition (guard=distance>threshold, ...)
+ nexts= 0:Driving/ ID=76 
+speed = 30 / guard distance>threshold /  in block Collision_Avoidance
+attributes=30 52 50 
+action#0: speed = 30 
+35 bunchid:5 @0/ 0: Driving ID=76 / top level operator
+ nexts= 0:avatar transition/ ID=105  in block Collision_Avoidance (silent)
+attributes=30 52 50 
+36 bunchid:5 @0/ 0: avatar transition ID=105 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=72  in block Collision_Avoidance
+attributes=30 52 50 
+37 bunchid:5 @0/ 0: action_on_signal:DC ID=72 / top level operator
+ nexts= 0:avatar transition/ ID=106  in block Collision_Avoidance
+attributes=30 52 50 
+38 bunchid:5 @0/ 0: avatar transition ID=116 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=108  in block DC_motor
+attributes=0 
+39 bunchid:5 @0/ 0: action_on_signal:DC ID=108 / top level operator
+ nexts= 0:avatar transition/ ID=117  in block DC_motor
+attributes=30 
+action#0: 30 
+40 bunchid:6 @0/ 0: avatar transition ID=117 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=109  in block DC_motor (silent)
+attributes=30 
+41 bunchid:6 @0/ 0: avatar transition ID=106 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=71  in block Collision_Avoidance (silent)
+attributes=30 52 50 
+42 bunchid:6 @0/ 0: busy ID=109 / top level operator
+ nexts= 0:avatar transition/ ID=113  in block DC_motor (silent)
+attributes=30 
+43 bunchid:6 @0/ 0: avatar transition ID=113 / top level operator
+ value:Empty transition
+ nexts= 0:Idle/ ID=110  in block DC_motor (silent)
+attributes=30 
+44 bunchid:6 @0/ 0: Idle ID=110 / top level operator
+ nexts= 0:avatar transition/ ID=116  in block DC_motor (silent)
+attributes=30 
+45 bunchid:6 @0/ 0: action_on_signal:US ID=118 / top level operator
+ nexts= 0:avatar transition/ ID=123  in block Ultrasonic_Sensor
+attributes=55 
+46 bunchid:6 @0/ 0: action_on_signal:US ID=71 / top level operator
+ nexts= 0:avatar transition/ ID=107  in block Collision_Avoidance
+attributes=30 55 50 
+action#0: 55 
+47 bunchid:7 @0/ 0: avatar transition ID=123 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=120  in block Ultrasonic_Sensor (silent)
+attributes=55 
+48 bunchid:7 @0/ 0: busy ID=120 / top level operator
+ nexts= 0:avatar transition/ ID=126  in block Ultrasonic_Sensor (silent)
+attributes=55 
+49 bunchid:7 @0/ 0: avatar transition ID=107 / top level operator
+ value:Empty transition
+ nexts= 0:choice__0/ ID=70  in block Collision_Avoidance (silent)
+attributes=30 55 50 
+50 bunchid:7 @0/ 0: choice__0 ID=70 / top level operator
+ nexts= 0:avatar transition/ ID=79 1:avatar transition/ ID=85  in block Collision_Avoidance (silent)
+attributes=30 55 50 
+51 bunchid:7 @0/ 0: avatar transition ID=85 / top level operator
+ value:Transition (guard=distance>threshold, ...)
+ nexts= 0:Driving/ ID=76 
+speed = 30 / guard distance>threshold /  in block Collision_Avoidance
+attributes=30 55 50 
+action#0: speed = 30 
+52 bunchid:8 @0/ 0: Driving ID=76 / top level operator
+ nexts= 0:avatar transition/ ID=105  in block Collision_Avoidance (silent)
+attributes=30 55 50 
+53 bunchid:8 @0/ 0: avatar transition ID=126 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=119  in block Ultrasonic_Sensor
+attributes=55 
+54 bunchid:8 @0/ 0: random ID=119 / top level operator
+ nexts= 0:avatar transition/ ID=127  in block Ultrasonic_Sensor
+attributes=53 
+action#0: distance = 53 
+55 bunchid:9 @0/ 0: avatar transition ID=127 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=118  in block Ultrasonic_Sensor (silent)
+attributes=53 
+56 bunchid:9 @0/ 0: avatar transition ID=105 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=72  in block Collision_Avoidance
+attributes=30 55 50 
+57 bunchid:9 @0/ 0: action_on_signal:DC ID=72 / top level operator
+ nexts= 0:avatar transition/ ID=106  in block Collision_Avoidance
+attributes=30 55 50 
+58 bunchid:9 @0/ 0: avatar transition ID=116 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=108  in block DC_motor
+attributes=30 
+59 bunchid:9 @0/ 0: action_on_signal:DC ID=108 / top level operator
+ nexts= 0:avatar transition/ ID=117  in block DC_motor
+attributes=30 
+action#0: 30 
+60 bunchid:10 @0/ 0: avatar transition ID=117 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=109  in block DC_motor (silent)
+attributes=30 
+61 bunchid:10 @0/ 0: busy ID=109 / top level operator
+ nexts= 0:avatar transition/ ID=113  in block DC_motor (silent)
+attributes=30 
+62 bunchid:10 @0/ 0: avatar transition ID=113 / top level operator
+ value:Empty transition
+ nexts= 0:Idle/ ID=110  in block DC_motor (silent)
+attributes=30 
+63 bunchid:10 @0/ 0: avatar transition ID=106 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=71  in block Collision_Avoidance (silent)
+attributes=30 55 50 
+64 bunchid:10 @0/ 0: Idle ID=110 / top level operator
+ nexts= 0:avatar transition/ ID=116  in block DC_motor (silent)
+attributes=30 
+65 bunchid:10 @0/ 0: action_on_signal:US ID=118 / top level operator
+ nexts= 0:avatar transition/ ID=123  in block Ultrasonic_Sensor
+attributes=53 
+66 bunchid:10 @0/ 0: action_on_signal:US ID=71 / top level operator
+ nexts= 0:avatar transition/ ID=107  in block Collision_Avoidance
+attributes=30 53 50 
+action#0: 53 
+67 bunchid:11 @0/ 0: avatar transition ID=123 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=120  in block Ultrasonic_Sensor (silent)
+attributes=53 
+68 bunchid:11 @0/ 0: busy ID=120 / top level operator
+ nexts= 0:avatar transition/ ID=126  in block Ultrasonic_Sensor (silent)
+attributes=53 
+69 bunchid:11 @0/ 0: avatar transition ID=107 / top level operator
+ value:Empty transition
+ nexts= 0:choice__0/ ID=70  in block Collision_Avoidance (silent)
+attributes=30 53 50 
+70 bunchid:11 @0/ 0: choice__0 ID=70 / top level operator
+ nexts= 0:avatar transition/ ID=79 1:avatar transition/ ID=85  in block Collision_Avoidance (silent)
+attributes=30 53 50 
+71 bunchid:11 @0/ 0: avatar transition ID=126 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=119  in block Ultrasonic_Sensor
+attributes=53 
+72 bunchid:11 @0/ 0: random ID=119 / top level operator
+ nexts= 0:avatar transition/ ID=127  in block Ultrasonic_Sensor
+attributes=49 
+action#0: distance = 49 
+73 bunchid:12 @0/ 0: avatar transition ID=127 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=118  in block Ultrasonic_Sensor (silent)
+attributes=49 
+74 bunchid:12 @0/ 0: avatar transition ID=85 / top level operator
+ value:Transition (guard=distance>threshold, ...)
+ nexts= 0:Driving/ ID=76 
+speed = 30 / guard distance>threshold /  in block Collision_Avoidance
+attributes=30 53 50 
+action#0: speed = 30 
+75 bunchid:13 @0/ 0: Driving ID=76 / top level operator
+ nexts= 0:avatar transition/ ID=105  in block Collision_Avoidance (silent)
+attributes=30 53 50 
+76 bunchid:13 @0/ 0: avatar transition ID=105 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=72  in block Collision_Avoidance
+attributes=30 53 50 
+77 bunchid:13 @0/ 0: action_on_signal:DC ID=72 / top level operator
+ nexts= 0:avatar transition/ ID=106  in block Collision_Avoidance
+attributes=30 53 50 
+78 bunchid:13 @0/ 0: avatar transition ID=116 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=108  in block DC_motor
+attributes=30 
+79 bunchid:13 @0/ 0: action_on_signal:DC ID=108 / top level operator
+ nexts= 0:avatar transition/ ID=117  in block DC_motor
+attributes=30 
+action#0: 30 
+80 bunchid:14 @0/ 0: avatar transition ID=106 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=71  in block Collision_Avoidance (silent)
+attributes=30 53 50 
+81 bunchid:14 @0/ 0: avatar transition ID=117 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=109  in block DC_motor (silent)
+attributes=30 
+82 bunchid:14 @0/ 0: busy ID=109 / top level operator
+ nexts= 0:avatar transition/ ID=113  in block DC_motor (silent)
+attributes=30 
+83 bunchid:14 @0/ 0: avatar transition ID=113 / top level operator
+ value:Empty transition
+ nexts= 0:Idle/ ID=110  in block DC_motor (silent)
+attributes=30 
+84 bunchid:14 @0/ 0: Idle ID=110 / top level operator
+ nexts= 0:avatar transition/ ID=116  in block DC_motor (silent)
+attributes=30 
+85 bunchid:14 @0/ 0: action_on_signal:US ID=118 / top level operator
+ nexts= 0:avatar transition/ ID=123  in block Ultrasonic_Sensor
+attributes=49 
+86 bunchid:14 @0/ 0: action_on_signal:US ID=71 / top level operator
+ nexts= 0:avatar transition/ ID=107  in block Collision_Avoidance
+attributes=30 49 50 
+action#0: 49 
+87 bunchid:15 @0/ 0: avatar transition ID=107 / top level operator
+ value:Empty transition
+ nexts= 0:choice__0/ ID=70  in block Collision_Avoidance (silent)
+attributes=30 49 50 
+88 bunchid:15 @0/ 0: avatar transition ID=123 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=120  in block Ultrasonic_Sensor (silent)
+attributes=49 
+89 bunchid:15 @0/ 0: choice__0 ID=70 / top level operator
+ nexts= 0:avatar transition/ ID=79 1:avatar transition/ ID=85  in block Collision_Avoidance (silent)
+attributes=30 49 50 
+90 bunchid:15 @0/ 0: busy ID=120 / top level operator
+ nexts= 0:avatar transition/ ID=126  in block Ultrasonic_Sensor (silent)
+attributes=49 
+91 bunchid:15 @0/ 0: avatar transition ID=79 / top level operator
+ value:Transition (guard=distance<=threshold, ...)
+ nexts= 0:Waiting/ ID=77 
+speed = 0 / guard distance<=threshold /  in block Collision_Avoidance
+attributes=0 49 50 
+action#0: speed = 0 
+92 bunchid:16 @0/ 0: Waiting ID=77 / top level operator
+ nexts= 0:avatar transition/ ID=98  in block Collision_Avoidance (silent)
+attributes=0 49 50 
+93 bunchid:16 @0/ 0: avatar transition ID=98 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=75  in block Collision_Avoidance
+attributes=0 49 50 
+94 bunchid:16 @0/ 0: action_on_signal:DC ID=75 / top level operator
+ nexts= 0:avatar transition/ ID=99  in block Collision_Avoidance
+attributes=0 49 50 
+95 bunchid:16 @0/ 0: avatar transition ID=116 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=108  in block DC_motor
+attributes=30 
+96 bunchid:16 @0/ 0: action_on_signal:DC ID=108 / top level operator
+ nexts= 0:avatar transition/ ID=117  in block DC_motor
+attributes=0 
+action#0: 0 
+97 bunchid:17 @0/ 0: avatar transition ID=117 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=109  in block DC_motor (silent)
+attributes=0 
+98 bunchid:17 @0/ 0: busy ID=109 / top level operator
+ nexts= 0:avatar transition/ ID=113  in block DC_motor (silent)
+attributes=0 
+99 bunchid:17 @0/ 0: avatar transition ID=99 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=74  in block Collision_Avoidance (silent)
+attributes=0 49 50 
+100 bunchid:17 @0/ 0: avatar transition ID=113 / top level operator
+ value:Empty transition
+ nexts= 0:Idle/ ID=110  in block DC_motor (silent)
+attributes=0 
+101 bunchid:17 @0/ 0: Idle ID=110 / top level operator
+ nexts= 0:avatar transition/ ID=116  in block DC_motor (silent)
+attributes=0 
+102 bunchid:17 @0/ 0: avatar transition ID=126 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=119  in block Ultrasonic_Sensor
+attributes=49 
+103 bunchid:17 @0/ 0: random ID=119 / top level operator
+ nexts= 0:avatar transition/ ID=127  in block Ultrasonic_Sensor
+attributes=55 
+action#0: distance = 55 
+104 bunchid:18 @0/ 0: avatar transition ID=127 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=118  in block Ultrasonic_Sensor (silent)
+attributes=55 
+105 bunchid:18 @0/ 0: action_on_signal:US ID=118 / top level operator
+ nexts= 0:avatar transition/ ID=123  in block Ultrasonic_Sensor
+attributes=55 
+106 bunchid:18 @0/ 0: action_on_signal:US ID=74 / top level operator
+ nexts= 0:avatar transition/ ID=96  in block Collision_Avoidance
+attributes=0 55 50 
+action#0: 55 
+107 bunchid:19 @0/ 0: avatar transition ID=96 / top level operator
+ value:Empty transition
+ nexts= 0:choice__1/ ID=73  in block Collision_Avoidance (silent)
+attributes=0 55 50 
+108 bunchid:19 @0/ 0: avatar transition ID=123 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=120  in block Ultrasonic_Sensor (silent)
+attributes=55 
+109 bunchid:19 @0/ 0: choice__1 ID=73 / top level operator
+ nexts= 0:avatar transition/ ID=91 1:avatar transition/ ID=100  in block Collision_Avoidance (silent)
+attributes=0 55 50 
+110 bunchid:19 @0/ 0: busy ID=120 / top level operator
+ nexts= 0:avatar transition/ ID=126  in block Ultrasonic_Sensor (silent)
+attributes=55 
+111 bunchid:19 @0/ 0: avatar transition ID=126 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=119  in block Ultrasonic_Sensor
+attributes=55 
+112 bunchid:19 @0/ 0: random ID=119 / top level operator
+ nexts= 0:avatar transition/ ID=127  in block Ultrasonic_Sensor
+attributes=48 
+action#0: distance = 48 
+113 bunchid:20 @0/ 0: avatar transition ID=127 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=118  in block Ultrasonic_Sensor (silent)
+attributes=48 
+114 bunchid:20 @0/ 0: avatar transition ID=100 / top level operator
+ value:Transition (guard=distance>threshold, ...)
+ nexts= 0:Driving/ ID=76 
+speed = 30 / guard distance>threshold /  in block Collision_Avoidance
+attributes=30 55 50 
+action#0: speed = 30 
+115 bunchid:21 @0/ 0: Driving ID=76 / top level operator
+ nexts= 0:avatar transition/ ID=105  in block Collision_Avoidance (silent)
+attributes=30 55 50 
+116 bunchid:21 @0/ 0: avatar transition ID=105 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=72  in block Collision_Avoidance
+attributes=30 55 50 
+117 bunchid:21 @0/ 0: action_on_signal:DC ID=72 / top level operator
+ nexts= 0:avatar transition/ ID=106  in block Collision_Avoidance
+attributes=30 55 50 
+118 bunchid:21 @0/ 0: avatar transition ID=116 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=108  in block DC_motor
+attributes=0 
+119 bunchid:21 @0/ 0: action_on_signal:DC ID=108 / top level operator
+ nexts= 0:avatar transition/ ID=117  in block DC_motor
+attributes=30 
+action#0: 30 
+120 bunchid:22 @0/ 0: avatar transition ID=117 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=109  in block DC_motor (silent)
+attributes=30 
+121 bunchid:22 @0/ 0: avatar transition ID=106 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=71  in block Collision_Avoidance (silent)
+attributes=30 55 50 
+122 bunchid:22 @0/ 0: busy ID=109 / top level operator
+ nexts= 0:avatar transition/ ID=113  in block DC_motor (silent)
+attributes=30 
+123 bunchid:22 @0/ 0: avatar transition ID=113 / top level operator
+ value:Empty transition
+ nexts= 0:Idle/ ID=110  in block DC_motor (silent)
+attributes=30 
+124 bunchid:22 @0/ 0: Idle ID=110 / top level operator
+ nexts= 0:avatar transition/ ID=116  in block DC_motor (silent)
+attributes=30 
+125 bunchid:22 @0/ 0: action_on_signal:US ID=118 / top level operator
+ nexts= 0:avatar transition/ ID=123  in block Ultrasonic_Sensor
+attributes=48 
+126 bunchid:22 @0/ 0: action_on_signal:US ID=71 / top level operator
+ nexts= 0:avatar transition/ ID=107  in block Collision_Avoidance
+attributes=30 48 50 
+action#0: 48 
+127 bunchid:23 @0/ 0: avatar transition ID=123 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=120  in block Ultrasonic_Sensor (silent)
+attributes=48 
+128 bunchid:23 @0/ 0: avatar transition ID=107 / top level operator
+ value:Empty transition
+ nexts= 0:choice__0/ ID=70  in block Collision_Avoidance (silent)
+attributes=30 48 50 
+129 bunchid:23 @0/ 0: choice__0 ID=70 / top level operator
+ nexts= 0:avatar transition/ ID=79 1:avatar transition/ ID=85  in block Collision_Avoidance (silent)
+attributes=30 48 50 
+130 bunchid:23 @0/ 0: busy ID=120 / top level operator
+ nexts= 0:avatar transition/ ID=126  in block Ultrasonic_Sensor (silent)
+attributes=48 
+131 bunchid:23 @0/ 0: avatar transition ID=79 / top level operator
+ value:Transition (guard=distance<=threshold, ...)
+ nexts= 0:Waiting/ ID=77 
+speed = 0 / guard distance<=threshold /  in block Collision_Avoidance
+attributes=0 48 50 
+action#0: speed = 0 
+132 bunchid:24 @0/ 0: Waiting ID=77 / top level operator
+ nexts= 0:avatar transition/ ID=98  in block Collision_Avoidance (silent)
+attributes=0 48 50 
+133 bunchid:24 @0/ 0: avatar transition ID=126 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=119  in block Ultrasonic_Sensor
+attributes=48 
+134 bunchid:24 @0/ 0: random ID=119 / top level operator
+ nexts= 0:avatar transition/ ID=127  in block Ultrasonic_Sensor
+attributes=54 
+action#0: distance = 54 
+135 bunchid:25 @0/ 0: avatar transition ID=127 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=118  in block Ultrasonic_Sensor (silent)
+attributes=54 
+136 bunchid:25 @0/ 0: avatar transition ID=98 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=75  in block Collision_Avoidance
+attributes=0 48 50 
+137 bunchid:25 @0/ 0: action_on_signal:DC ID=75 / top level operator
+ nexts= 0:avatar transition/ ID=99  in block Collision_Avoidance
+attributes=0 48 50 
+138 bunchid:25 @0/ 0: avatar transition ID=116 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=108  in block DC_motor
+attributes=30 
+139 bunchid:25 @0/ 0: action_on_signal:DC ID=108 / top level operator
+ nexts= 0:avatar transition/ ID=117  in block DC_motor
+attributes=0 
+action#0: 0 
+140 bunchid:26 @0/ 0: avatar transition ID=99 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=74  in block Collision_Avoidance (silent)
+attributes=0 48 50 
+141 bunchid:26 @0/ 0: avatar transition ID=117 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=109  in block DC_motor (silent)
+attributes=0 
+142 bunchid:26 @0/ 0: busy ID=109 / top level operator
+ nexts= 0:avatar transition/ ID=113  in block DC_motor (silent)
+attributes=0 
+143 bunchid:26 @0/ 0: avatar transition ID=113 / top level operator
+ value:Empty transition
+ nexts= 0:Idle/ ID=110  in block DC_motor (silent)
+attributes=0 
+144 bunchid:26 @0/ 0: Idle ID=110 / top level operator
+ nexts= 0:avatar transition/ ID=116  in block DC_motor (silent)
+attributes=0 
+145 bunchid:26 @0/ 0: action_on_signal:US ID=118 / top level operator
+ nexts= 0:avatar transition/ ID=123  in block Ultrasonic_Sensor
+attributes=54 
+146 bunchid:26 @0/ 0: action_on_signal:US ID=74 / top level operator
+ nexts= 0:avatar transition/ ID=96  in block Collision_Avoidance
+attributes=0 54 50 
+action#0: 54 
+147 bunchid:27 @0/ 0: avatar transition ID=96 / top level operator
+ value:Empty transition
+ nexts= 0:choice__1/ ID=73  in block Collision_Avoidance (silent)
+attributes=0 54 50 
+148 bunchid:27 @0/ 0: avatar transition ID=123 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=120  in block Ultrasonic_Sensor (silent)
+attributes=54 
+149 bunchid:27 @0/ 0: choice__1 ID=73 / top level operator
+ nexts= 0:avatar transition/ ID=91 1:avatar transition/ ID=100  in block Collision_Avoidance (silent)
+attributes=0 54 50 
+150 bunchid:27 @0/ 0: busy ID=120 / top level operator
+ nexts= 0:avatar transition/ ID=126  in block Ultrasonic_Sensor (silent)
+attributes=54 
+151 bunchid:27 @0/ 0: avatar transition ID=126 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=119  in block Ultrasonic_Sensor
+attributes=54 
+152 bunchid:27 @0/ 0: random ID=119 / top level operator
+ nexts= 0:avatar transition/ ID=127  in block Ultrasonic_Sensor
+attributes=52 
+action#0: distance = 52 
+153 bunchid:28 @0/ 0: avatar transition ID=127 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=118  in block Ultrasonic_Sensor (silent)
+attributes=52 
+154 bunchid:28 @0/ 0: avatar transition ID=100 / top level operator
+ value:Transition (guard=distance>threshold, ...)
+ nexts= 0:Driving/ ID=76 
+speed = 30 / guard distance>threshold /  in block Collision_Avoidance
+attributes=30 54 50 
+action#0: speed = 30 
+155 bunchid:29 @0/ 0: Driving ID=76 / top level operator
+ nexts= 0:avatar transition/ ID=105  in block Collision_Avoidance (silent)
+attributes=30 54 50 
+156 bunchid:29 @0/ 0: avatar transition ID=105 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=72  in block Collision_Avoidance
+attributes=30 54 50 
+157 bunchid:29 @0/ 0: action_on_signal:DC ID=72 / top level operator
+ nexts= 0:avatar transition/ ID=106  in block Collision_Avoidance
+attributes=30 54 50 
+158 bunchid:29 @0/ 0: avatar transition ID=116 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=108  in block DC_motor
+attributes=0 
+159 bunchid:29 @0/ 0: action_on_signal:DC ID=108 / top level operator
+ nexts= 0:avatar transition/ ID=117  in block DC_motor
+attributes=30 
+action#0: 30 
+160 bunchid:30 @0/ 0: avatar transition ID=106 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=71  in block Collision_Avoidance (silent)
+attributes=30 54 50 
+161 bunchid:30 @0/ 0: avatar transition ID=117 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=109  in block DC_motor (silent)
+attributes=30 
+162 bunchid:30 @0/ 0: busy ID=109 / top level operator
+ nexts= 0:avatar transition/ ID=113  in block DC_motor (silent)
+attributes=30 
+163 bunchid:30 @0/ 0: avatar transition ID=113 / top level operator
+ value:Empty transition
+ nexts= 0:Idle/ ID=110  in block DC_motor (silent)
+attributes=30 
+164 bunchid:30 @0/ 0: Idle ID=110 / top level operator
+ nexts= 0:avatar transition/ ID=116  in block DC_motor (silent)
+attributes=30 
+165 bunchid:30 @0/ 0: action_on_signal:US ID=118 / top level operator
+ nexts= 0:avatar transition/ ID=123  in block Ultrasonic_Sensor
+attributes=52 
+166 bunchid:30 @0/ 0: action_on_signal:US ID=71 / top level operator
+ nexts= 0:avatar transition/ ID=107  in block Collision_Avoidance
+attributes=30 52 50 
+action#0: 52 
+167 bunchid:31 @0/ 0: avatar transition ID=123 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=120  in block Ultrasonic_Sensor (silent)
+attributes=52 
+168 bunchid:31 @0/ 0: avatar transition ID=107 / top level operator
+ value:Empty transition
+ nexts= 0:choice__0/ ID=70  in block Collision_Avoidance (silent)
+attributes=30 52 50 
+169 bunchid:31 @0/ 0: choice__0 ID=70 / top level operator
+ nexts= 0:avatar transition/ ID=79 1:avatar transition/ ID=85  in block Collision_Avoidance (silent)
+attributes=30 52 50 
+170 bunchid:31 @0/ 0: busy ID=120 / top level operator
+ nexts= 0:avatar transition/ ID=126  in block Ultrasonic_Sensor (silent)
+attributes=52 
+171 bunchid:31 @0/ 0: avatar transition ID=126 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=119  in block Ultrasonic_Sensor
+attributes=52 
+172 bunchid:31 @0/ 0: random ID=119 / top level operator
+ nexts= 0:avatar transition/ ID=127  in block Ultrasonic_Sensor
+attributes=50 
+action#0: distance = 50 
+173 bunchid:32 @0/ 0: avatar transition ID=127 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=118  in block Ultrasonic_Sensor (silent)
+attributes=50 
+174 bunchid:32 @0/ 0: avatar transition ID=85 / top level operator
+ value:Transition (guard=distance>threshold, ...)
+ nexts= 0:Driving/ ID=76 
+speed = 30 / guard distance>threshold /  in block Collision_Avoidance
+attributes=30 52 50 
+action#0: speed = 30 
+175 bunchid:33 @0/ 0: Driving ID=76 / top level operator
+ nexts= 0:avatar transition/ ID=105  in block Collision_Avoidance (silent)
+attributes=30 52 50 
+176 bunchid:33 @0/ 0: avatar transition ID=105 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=72  in block Collision_Avoidance
+attributes=30 52 50 
+177 bunchid:33 @0/ 0: action_on_signal:DC ID=72 / top level operator
+ nexts= 0:avatar transition/ ID=106  in block Collision_Avoidance
+attributes=30 52 50 
+178 bunchid:33 @0/ 0: avatar transition ID=116 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=108  in block DC_motor
+attributes=30 
+179 bunchid:33 @0/ 0: action_on_signal:DC ID=108 / top level operator
+ nexts= 0:avatar transition/ ID=117  in block DC_motor
+attributes=30 
+action#0: 30 
+180 bunchid:34 @0/ 0: avatar transition ID=117 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=109  in block DC_motor (silent)
+attributes=30 
+181 bunchid:34 @0/ 0: busy ID=109 / top level operator
+ nexts= 0:avatar transition/ ID=113  in block DC_motor (silent)
+attributes=30 
+182 bunchid:34 @0/ 0: avatar transition ID=106 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=71  in block Collision_Avoidance (silent)
+attributes=30 52 50 
+183 bunchid:34 @0/ 0: avatar transition ID=113 / top level operator
+ value:Empty transition
+ nexts= 0:Idle/ ID=110  in block DC_motor (silent)
+attributes=30 
+184 bunchid:34 @0/ 0: Idle ID=110 / top level operator
+ nexts= 0:avatar transition/ ID=116  in block DC_motor (silent)
+attributes=30 
+185 bunchid:34 @0/ 0: action_on_signal:US ID=118 / top level operator
+ nexts= 0:avatar transition/ ID=123  in block Ultrasonic_Sensor
+attributes=50 
+186 bunchid:34 @0/ 0: action_on_signal:US ID=71 / top level operator
+ nexts= 0:avatar transition/ ID=107  in block Collision_Avoidance
+attributes=30 50 50 
+action#0: 50 
+187 bunchid:35 @0/ 0: avatar transition ID=107 / top level operator
+ value:Empty transition
+ nexts= 0:choice__0/ ID=70  in block Collision_Avoidance (silent)
+attributes=30 50 50 
+188 bunchid:35 @0/ 0: avatar transition ID=123 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=120  in block Ultrasonic_Sensor (silent)
+attributes=50 
+189 bunchid:35 @0/ 0: busy ID=120 / top level operator
+ nexts= 0:avatar transition/ ID=126  in block Ultrasonic_Sensor (silent)
+attributes=50 
+190 bunchid:35 @0/ 0: choice__0 ID=70 / top level operator
+ nexts= 0:avatar transition/ ID=79 1:avatar transition/ ID=85  in block Collision_Avoidance (silent)
+attributes=30 50 50 
+191 bunchid:35 @0/ 0: avatar transition ID=126 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=119  in block Ultrasonic_Sensor
+attributes=50 
+192 bunchid:35 @0/ 0: random ID=119 / top level operator
+ nexts= 0:avatar transition/ ID=127  in block Ultrasonic_Sensor
+attributes=51 
+action#0: distance = 51 
+193 bunchid:36 @0/ 0: avatar transition ID=127 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=118  in block Ultrasonic_Sensor (silent)
+attributes=51 
+194 bunchid:36 @0/ 0: avatar transition ID=79 / top level operator
+ value:Transition (guard=distance<=threshold, ...)
+ nexts= 0:Waiting/ ID=77 
+speed = 0 / guard distance<=threshold /  in block Collision_Avoidance
+attributes=0 50 50 
+action#0: speed = 0 
+195 bunchid:37 @0/ 0: Waiting ID=77 / top level operator
+ nexts= 0:avatar transition/ ID=98  in block Collision_Avoidance (silent)
+attributes=0 50 50 
+196 bunchid:37 @0/ 0: avatar transition ID=98 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=75  in block Collision_Avoidance
+attributes=0 50 50 
+197 bunchid:37 @0/ 0: action_on_signal:DC ID=75 / top level operator
+ nexts= 0:avatar transition/ ID=99  in block Collision_Avoidance
+attributes=0 50 50 
+198 bunchid:37 @0/ 0: avatar transition ID=116 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=108  in block DC_motor
+attributes=30 
+199 bunchid:37 @0/ 0: action_on_signal:DC ID=108 / top level operator
+ nexts= 0:avatar transition/ ID=117  in block DC_motor
+attributes=0 
+action#0: 0 
+200 bunchid:38 @0/ 0: avatar transition ID=99 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=74  in block Collision_Avoidance (silent)
+attributes=0 50 50 
+201 bunchid:38 @0/ 0: avatar transition ID=117 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=109  in block DC_motor (silent)
+attributes=0 
+202 bunchid:38 @0/ 0: busy ID=109 / top level operator
+ nexts= 0:avatar transition/ ID=113  in block DC_motor (silent)
+attributes=0 
+203 bunchid:38 @0/ 0: avatar transition ID=113 / top level operator
+ value:Empty transition
+ nexts= 0:Idle/ ID=110  in block DC_motor (silent)
+attributes=0 
+204 bunchid:38 @0/ 0: Idle ID=110 / top level operator
+ nexts= 0:avatar transition/ ID=116  in block DC_motor (silent)
+attributes=0 
+205 bunchid:38 @0/ 0: action_on_signal:US ID=118 / top level operator
+ nexts= 0:avatar transition/ ID=123  in block Ultrasonic_Sensor
+attributes=51 
+206 bunchid:38 @0/ 0: action_on_signal:US ID=74 / top level operator
+ nexts= 0:avatar transition/ ID=96  in block Collision_Avoidance
+attributes=0 51 50 
+action#0: 51 
+207 bunchid:39 @0/ 0: avatar transition ID=96 / top level operator
+ value:Empty transition
+ nexts= 0:choice__1/ ID=73  in block Collision_Avoidance (silent)
+attributes=0 51 50 
+208 bunchid:39 @0/ 0: avatar transition ID=123 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=120  in block Ultrasonic_Sensor (silent)
+attributes=51 
+209 bunchid:39 @0/ 0: choice__1 ID=73 / top level operator
+ nexts= 0:avatar transition/ ID=91 1:avatar transition/ ID=100  in block Collision_Avoidance (silent)
+attributes=0 51 50 
+210 bunchid:39 @0/ 0: busy ID=120 / top level operator
+ nexts= 0:avatar transition/ ID=126  in block Ultrasonic_Sensor (silent)
+attributes=51 
+211 bunchid:39 @0/ 0: avatar transition ID=100 / top level operator
+ value:Transition (guard=distance>threshold, ...)
+ nexts= 0:Driving/ ID=76 
+speed = 30 / guard distance>threshold /  in block Collision_Avoidance
+attributes=30 51 50 
+action#0: speed = 30 
+212 bunchid:40 @0/ 0: Driving ID=76 / top level operator
+ nexts= 0:avatar transition/ ID=105  in block Collision_Avoidance (silent)
+attributes=30 51 50 
+213 bunchid:40 @0/ 0: avatar transition ID=126 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=119  in block Ultrasonic_Sensor
+attributes=51 
+214 bunchid:40 @0/ 0: random ID=119 / top level operator
+ nexts= 0:avatar transition/ ID=127  in block Ultrasonic_Sensor
+attributes=45 
+action#0: distance = 45 
+215 bunchid:41 @0/ 0: avatar transition ID=127 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=118  in block Ultrasonic_Sensor (silent)
+attributes=45 
+216 bunchid:41 @0/ 0: avatar transition ID=105 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=72  in block Collision_Avoidance
+attributes=30 51 50 
+217 bunchid:41 @0/ 0: action_on_signal:DC ID=72 / top level operator
+ nexts= 0:avatar transition/ ID=106  in block Collision_Avoidance
+attributes=30 51 50 
+218 bunchid:41 @0/ 0: avatar transition ID=116 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=108  in block DC_motor
+attributes=0 
+219 bunchid:41 @0/ 0: action_on_signal:DC ID=108 / top level operator
+ nexts= 0:avatar transition/ ID=117  in block DC_motor
+attributes=30 
+action#0: 30 
+220 bunchid:42 @0/ 0: avatar transition ID=106 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=71  in block Collision_Avoidance (silent)
+attributes=30 51 50 
+221 bunchid:42 @0/ 0: avatar transition ID=117 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=109  in block DC_motor (silent)
+attributes=30 
+222 bunchid:42 @0/ 0: busy ID=109 / top level operator
+ nexts= 0:avatar transition/ ID=113  in block DC_motor (silent)
+attributes=30 
+223 bunchid:42 @0/ 0: avatar transition ID=113 / top level operator
+ value:Empty transition
+ nexts= 0:Idle/ ID=110  in block DC_motor (silent)
+attributes=30 
+224 bunchid:42 @0/ 0: Idle ID=110 / top level operator
+ nexts= 0:avatar transition/ ID=116  in block DC_motor (silent)
+attributes=30 
+225 bunchid:42 @0/ 0: action_on_signal:US ID=118 / top level operator
+ nexts= 0:avatar transition/ ID=123  in block Ultrasonic_Sensor
+attributes=45 
+226 bunchid:42 @0/ 0: action_on_signal:US ID=71 / top level operator
+ nexts= 0:avatar transition/ ID=107  in block Collision_Avoidance
+attributes=30 45 50 
+action#0: 45 
+227 bunchid:43 @0/ 0: avatar transition ID=107 / top level operator
+ value:Empty transition
+ nexts= 0:choice__0/ ID=70  in block Collision_Avoidance (silent)
+attributes=30 45 50 
+228 bunchid:43 @0/ 0: choice__0 ID=70 / top level operator
+ nexts= 0:avatar transition/ ID=79 1:avatar transition/ ID=85  in block Collision_Avoidance (silent)
+attributes=30 45 50 
+229 bunchid:43 @0/ 0: avatar transition ID=123 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=120  in block Ultrasonic_Sensor (silent)
+attributes=45 
+230 bunchid:43 @0/ 0: busy ID=120 / top level operator
+ nexts= 0:avatar transition/ ID=126  in block Ultrasonic_Sensor (silent)
+attributes=45 
+231 bunchid:43 @0/ 0: avatar transition ID=79 / top level operator
+ value:Transition (guard=distance<=threshold, ...)
+ nexts= 0:Waiting/ ID=77 
+speed = 0 / guard distance<=threshold /  in block Collision_Avoidance
+attributes=0 45 50 
+action#0: speed = 0 
+232 bunchid:44 @0/ 0: Waiting ID=77 / top level operator
+ nexts= 0:avatar transition/ ID=98  in block Collision_Avoidance (silent)
+attributes=0 45 50 
+233 bunchid:44 @0/ 0: avatar transition ID=126 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=119  in block Ultrasonic_Sensor
+attributes=45 
+234 bunchid:44 @0/ 0: random ID=119 / top level operator
+ nexts= 0:avatar transition/ ID=127  in block Ultrasonic_Sensor
+attributes=46 
+action#0: distance = 46 
+235 bunchid:45 @0/ 0: avatar transition ID=127 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=118  in block Ultrasonic_Sensor (silent)
+attributes=46 
+236 bunchid:45 @0/ 0: avatar transition ID=98 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=75  in block Collision_Avoidance
+attributes=0 45 50 
+237 bunchid:45 @0/ 0: action_on_signal:DC ID=75 / top level operator
+ nexts= 0:avatar transition/ ID=99  in block Collision_Avoidance
+attributes=0 45 50 
+238 bunchid:45 @0/ 0: avatar transition ID=116 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=108  in block DC_motor
+attributes=30 
+239 bunchid:45 @0/ 0: action_on_signal:DC ID=108 / top level operator
+ nexts= 0:avatar transition/ ID=117  in block DC_motor
+attributes=0 
+action#0: 0 
+240 bunchid:46 @0/ 0: avatar transition ID=99 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=74  in block Collision_Avoidance (silent)
+attributes=0 45 50 
+241 bunchid:46 @0/ 0: avatar transition ID=117 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=109  in block DC_motor (silent)
+attributes=0 
+242 bunchid:46 @0/ 0: busy ID=109 / top level operator
+ nexts= 0:avatar transition/ ID=113  in block DC_motor (silent)
+attributes=0 
+243 bunchid:46 @0/ 0: avatar transition ID=113 / top level operator
+ value:Empty transition
+ nexts= 0:Idle/ ID=110  in block DC_motor (silent)
+attributes=0 
+244 bunchid:46 @0/ 0: Idle ID=110 / top level operator
+ nexts= 0:avatar transition/ ID=116  in block DC_motor (silent)
+attributes=0 
+245 bunchid:46 @0/ 0: action_on_signal:US ID=118 / top level operator
+ nexts= 0:avatar transition/ ID=123  in block Ultrasonic_Sensor
+attributes=46 
+246 bunchid:46 @0/ 0: action_on_signal:US ID=74 / top level operator
+ nexts= 0:avatar transition/ ID=96  in block Collision_Avoidance
+attributes=0 46 50 
+action#0: 46 
+247 bunchid:47 @0/ 0: avatar transition ID=123 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=120  in block Ultrasonic_Sensor (silent)
+attributes=46 
+248 bunchid:47 @0/ 0: avatar transition ID=96 / top level operator
+ value:Empty transition
+ nexts= 0:choice__1/ ID=73  in block Collision_Avoidance (silent)
+attributes=0 46 50 
+249 bunchid:47 @0/ 0: busy ID=120 / top level operator
+ nexts= 0:avatar transition/ ID=126  in block Ultrasonic_Sensor (silent)
+attributes=46 
+250 bunchid:47 @0/ 0: choice__1 ID=73 / top level operator
+ nexts= 0:avatar transition/ ID=91 1:avatar transition/ ID=100  in block Collision_Avoidance (silent)
+attributes=0 46 50 
+251 bunchid:47 @0/ 0: avatar transition ID=91 / top level operator
+ value:Transition (guard=distance<=threshold, ...)
+ nexts= 0:Waiting/ ID=77 
+speed = 0 / guard distance<=threshold /  in block Collision_Avoidance
+attributes=0 46 50 
+action#0: speed = 0 
+252 bunchid:48 @0/ 0: Waiting ID=77 / top level operator
+ nexts= 0:avatar transition/ ID=98  in block Collision_Avoidance (silent)
+attributes=0 46 50 
+253 bunchid:48 @0/ 0: avatar transition ID=126 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=119  in block Ultrasonic_Sensor
+attributes=46 
+254 bunchid:48 @0/ 0: random ID=119 / top level operator
+ nexts= 0:avatar transition/ ID=127  in block Ultrasonic_Sensor
+attributes=54 
+action#0: distance = 54 
+255 bunchid:49 @0/ 0: avatar transition ID=127 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=118  in block Ultrasonic_Sensor (silent)
+attributes=54 
+256 bunchid:49 @0/ 0: avatar transition ID=98 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=75  in block Collision_Avoidance
+attributes=0 46 50 
+257 bunchid:49 @0/ 0: action_on_signal:DC ID=75 / top level operator
+ nexts= 0:avatar transition/ ID=99  in block Collision_Avoidance
+attributes=0 46 50 
+258 bunchid:49 @0/ 0: avatar transition ID=116 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=108  in block DC_motor
+attributes=0 
+259 bunchid:49 @0/ 0: action_on_signal:DC ID=108 / top level operator
+ nexts= 0:avatar transition/ ID=117  in block DC_motor
+attributes=0 
+action#0: 0 
+260 bunchid:50 @0/ 0: avatar transition ID=99 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=74  in block Collision_Avoidance (silent)
+attributes=0 46 50 
+261 bunchid:50 @0/ 0: avatar transition ID=117 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=109  in block DC_motor (silent)
+attributes=0 
+262 bunchid:50 @0/ 0: busy ID=109 / top level operator
+ nexts= 0:avatar transition/ ID=113  in block DC_motor (silent)
+attributes=0 
+263 bunchid:50 @0/ 0: avatar transition ID=113 / top level operator
+ value:Empty transition
+ nexts= 0:Idle/ ID=110  in block DC_motor (silent)
+attributes=0 
+264 bunchid:50 @0/ 0: Idle ID=110 / top level operator
+ nexts= 0:avatar transition/ ID=116  in block DC_motor (silent)
+attributes=0 
+265 bunchid:50 @0/ 0: action_on_signal:US ID=118 / top level operator
+ nexts= 0:avatar transition/ ID=123  in block Ultrasonic_Sensor
+attributes=54 
+266 bunchid:50 @0/ 0: action_on_signal:US ID=74 / top level operator
+ nexts= 0:avatar transition/ ID=96  in block Collision_Avoidance
+attributes=0 54 50 
+action#0: 54 
+267 bunchid:51 @0/ 0: avatar transition ID=123 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=120  in block Ultrasonic_Sensor (silent)
+attributes=54 
+268 bunchid:51 @0/ 0: avatar transition ID=96 / top level operator
+ value:Empty transition
+ nexts= 0:choice__1/ ID=73  in block Collision_Avoidance (silent)
+attributes=0 54 50 
+269 bunchid:51 @0/ 0: choice__1 ID=73 / top level operator
+ nexts= 0:avatar transition/ ID=91 1:avatar transition/ ID=100  in block Collision_Avoidance (silent)
+attributes=0 54 50 
+270 bunchid:51 @0/ 0: busy ID=120 / top level operator
+ nexts= 0:avatar transition/ ID=126  in block Ultrasonic_Sensor (silent)
+attributes=54 
+271 bunchid:51 @0/ 0: avatar transition ID=126 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=119  in block Ultrasonic_Sensor
+attributes=54 
+272 bunchid:51 @0/ 0: random ID=119 / top level operator
+ nexts= 0:avatar transition/ ID=127  in block Ultrasonic_Sensor
+attributes=54 
+action#0: distance = 54 
+273 bunchid:52 @0/ 0: avatar transition ID=127 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=118  in block Ultrasonic_Sensor (silent)
+attributes=54 
+274 bunchid:52 @0/ 0: avatar transition ID=100 / top level operator
+ value:Transition (guard=distance>threshold, ...)
+ nexts= 0:Driving/ ID=76 
+speed = 30 / guard distance>threshold /  in block Collision_Avoidance
+attributes=30 54 50 
+action#0: speed = 30 
+275 bunchid:53 @0/ 0: Driving ID=76 / top level operator
+ nexts= 0:avatar transition/ ID=105  in block Collision_Avoidance (silent)
+attributes=30 54 50 
+276 bunchid:53 @0/ 0: avatar transition ID=105 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=72  in block Collision_Avoidance
+attributes=30 54 50 
+277 bunchid:53 @0/ 0: action_on_signal:DC ID=72 / top level operator
+ nexts= 0:avatar transition/ ID=106  in block Collision_Avoidance
+attributes=30 54 50 
+278 bunchid:53 @0/ 0: avatar transition ID=116 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=108  in block DC_motor
+attributes=0 
+279 bunchid:53 @0/ 0: action_on_signal:DC ID=108 / top level operator
+ nexts= 0:avatar transition/ ID=117  in block DC_motor
+attributes=30 
+action#0: 30 
+280 bunchid:54 @0/ 0: avatar transition ID=117 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=109  in block DC_motor (silent)
+attributes=30 
+281 bunchid:54 @0/ 0: busy ID=109 / top level operator
+ nexts= 0:avatar transition/ ID=113  in block DC_motor (silent)
+attributes=30 
+282 bunchid:54 @0/ 0: avatar transition ID=113 / top level operator
+ value:Empty transition
+ nexts= 0:Idle/ ID=110  in block DC_motor (silent)
+attributes=30 
+283 bunchid:54 @0/ 0: avatar transition ID=106 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=71  in block Collision_Avoidance (silent)
+attributes=30 54 50 
+284 bunchid:54 @0/ 0: Idle ID=110 / top level operator
+ nexts= 0:avatar transition/ ID=116  in block DC_motor (silent)
+attributes=30 
+285 bunchid:54 @0/ 0: action_on_signal:US ID=118 / top level operator
+ nexts= 0:avatar transition/ ID=123  in block Ultrasonic_Sensor
+attributes=54 
+286 bunchid:54 @0/ 0: action_on_signal:US ID=71 / top level operator
+ nexts= 0:avatar transition/ ID=107  in block Collision_Avoidance
+attributes=30 54 50 
+action#0: 54 
+287 bunchid:55 @0/ 0: avatar transition ID=123 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=120  in block Ultrasonic_Sensor (silent)
+attributes=54 
+288 bunchid:55 @0/ 0: avatar transition ID=107 / top level operator
+ value:Empty transition
+ nexts= 0:choice__0/ ID=70  in block Collision_Avoidance (silent)
+attributes=30 54 50 
+289 bunchid:55 @0/ 0: choice__0 ID=70 / top level operator
+ nexts= 0:avatar transition/ ID=79 1:avatar transition/ ID=85  in block Collision_Avoidance (silent)
+attributes=30 54 50 
+290 bunchid:55 @0/ 0: busy ID=120 / top level operator
+ nexts= 0:avatar transition/ ID=126  in block Ultrasonic_Sensor (silent)
+attributes=54 
+291 bunchid:55 @0/ 0: avatar transition ID=85 / top level operator
+ value:Transition (guard=distance>threshold, ...)
+ nexts= 0:Driving/ ID=76 
+speed = 30 / guard distance>threshold /  in block Collision_Avoidance
+attributes=30 54 50 
+action#0: speed = 30 
+292 bunchid:56 @0/ 0: Driving ID=76 / top level operator
+ nexts= 0:avatar transition/ ID=105  in block Collision_Avoidance (silent)
+attributes=30 54 50 
+293 bunchid:56 @0/ 0: avatar transition ID=126 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=119  in block Ultrasonic_Sensor
+attributes=54 
+294 bunchid:56 @0/ 0: random ID=119 / top level operator
+ nexts= 0:avatar transition/ ID=127  in block Ultrasonic_Sensor
+attributes=55 
+action#0: distance = 55 
+295 bunchid:57 @0/ 0: avatar transition ID=127 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=118  in block Ultrasonic_Sensor (silent)
+attributes=55 
+296 bunchid:57 @0/ 0: avatar transition ID=105 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=72  in block Collision_Avoidance
+attributes=30 54 50 
+297 bunchid:57 @0/ 0: action_on_signal:DC ID=72 / top level operator
+ nexts= 0:avatar transition/ ID=106  in block Collision_Avoidance
+attributes=30 54 50 
+298 bunchid:57 @0/ 0: avatar transition ID=116 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=108  in block DC_motor
+attributes=30 
+299 bunchid:57 @0/ 0: action_on_signal:DC ID=108 / top level operator
+ nexts= 0:avatar transition/ ID=117  in block DC_motor
+attributes=30 
+action#0: 30 
+300 bunchid:58 @0/ 0: avatar transition ID=106 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=71  in block Collision_Avoidance (silent)
+attributes=30 54 50 
+301 bunchid:58 @0/ 0: avatar transition ID=117 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=109  in block DC_motor (silent)
+attributes=30 
+302 bunchid:58 @0/ 0: busy ID=109 / top level operator
+ nexts= 0:avatar transition/ ID=113  in block DC_motor (silent)
+attributes=30 
+303 bunchid:58 @0/ 0: avatar transition ID=113 / top level operator
+ value:Empty transition
+ nexts= 0:Idle/ ID=110  in block DC_motor (silent)
+attributes=30 
+304 bunchid:58 @0/ 0: Idle ID=110 / top level operator
+ nexts= 0:avatar transition/ ID=116  in block DC_motor (silent)
+attributes=30 
+305 bunchid:58 @0/ 0: action_on_signal:US ID=118 / top level operator
+ nexts= 0:avatar transition/ ID=123  in block Ultrasonic_Sensor
+attributes=55 
+306 bunchid:58 @0/ 0: action_on_signal:US ID=71 / top level operator
+ nexts= 0:avatar transition/ ID=107  in block Collision_Avoidance
+attributes=30 55 50 
+action#0: 55 
+307 bunchid:59 @0/ 0: avatar transition ID=107 / top level operator
+ value:Empty transition
+ nexts= 0:choice__0/ ID=70  in block Collision_Avoidance (silent)
+attributes=30 55 50 
+308 bunchid:59 @0/ 0: choice__0 ID=70 / top level operator
+ nexts= 0:avatar transition/ ID=79 1:avatar transition/ ID=85  in block Collision_Avoidance (silent)
+attributes=30 55 50 
+309 bunchid:59 @0/ 0: avatar transition ID=123 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=120  in block Ultrasonic_Sensor (silent)
+attributes=55 
+310 bunchid:59 @0/ 0: busy ID=120 / top level operator
+ nexts= 0:avatar transition/ ID=126  in block Ultrasonic_Sensor (silent)
+attributes=55 
+311 bunchid:59 @0/ 0: avatar transition ID=126 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=119  in block Ultrasonic_Sensor
+attributes=55 
+312 bunchid:59 @0/ 0: random ID=119 / top level operator
+ nexts= 0:avatar transition/ ID=127  in block Ultrasonic_Sensor
+attributes=49 
+action#0: distance = 49 
+313 bunchid:60 @0/ 0: avatar transition ID=127 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=118  in block Ultrasonic_Sensor (silent)
+attributes=49 
+314 bunchid:60 @0/ 0: avatar transition ID=85 / top level operator
+ value:Transition (guard=distance>threshold, ...)
+ nexts= 0:Driving/ ID=76 
+speed = 30 / guard distance>threshold /  in block Collision_Avoidance
+attributes=30 55 50 
+action#0: speed = 30 
+315 bunchid:61 @0/ 0: Driving ID=76 / top level operator
+ nexts= 0:avatar transition/ ID=105  in block Collision_Avoidance (silent)
+attributes=30 55 50 
+316 bunchid:61 @0/ 0: avatar transition ID=105 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=72  in block Collision_Avoidance
+attributes=30 55 50 
+317 bunchid:61 @0/ 0: action_on_signal:DC ID=72 / top level operator
+ nexts= 0:avatar transition/ ID=106  in block Collision_Avoidance
+attributes=30 55 50 
+318 bunchid:61 @0/ 0: avatar transition ID=116 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=108  in block DC_motor
+attributes=30 
+319 bunchid:61 @0/ 0: action_on_signal:DC ID=108 / top level operator
+ nexts= 0:avatar transition/ ID=117  in block DC_motor
+attributes=30 
+action#0: 30 
+320 bunchid:62 @0/ 0: avatar transition ID=117 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=109  in block DC_motor (silent)
+attributes=30 
+321 bunchid:62 @0/ 0: avatar transition ID=106 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=71  in block Collision_Avoidance (silent)
+attributes=30 55 50 
+322 bunchid:62 @0/ 0: busy ID=109 / top level operator
+ nexts= 0:avatar transition/ ID=113  in block DC_motor (silent)
+attributes=30 
+323 bunchid:62 @0/ 0: avatar transition ID=113 / top level operator
+ value:Empty transition
+ nexts= 0:Idle/ ID=110  in block DC_motor (silent)
+attributes=30 
+324 bunchid:62 @0/ 0: Idle ID=110 / top level operator
+ nexts= 0:avatar transition/ ID=116  in block DC_motor (silent)
+attributes=30 
+325 bunchid:62 @0/ 0: action_on_signal:US ID=118 / top level operator
+ nexts= 0:avatar transition/ ID=123  in block Ultrasonic_Sensor
+attributes=49 
+326 bunchid:62 @0/ 0: action_on_signal:US ID=71 / top level operator
+ nexts= 0:avatar transition/ ID=107  in block Collision_Avoidance
+attributes=30 49 50 
+action#0: 49 
+327 bunchid:63 @0/ 0: avatar transition ID=123 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=120  in block Ultrasonic_Sensor (silent)
+attributes=49 
+328 bunchid:63 @0/ 0: busy ID=120 / top level operator
+ nexts= 0:avatar transition/ ID=126  in block Ultrasonic_Sensor (silent)
+attributes=49 
+329 bunchid:63 @0/ 0: avatar transition ID=107 / top level operator
+ value:Empty transition
+ nexts= 0:choice__0/ ID=70  in block Collision_Avoidance (silent)
+attributes=30 49 50 
+330 bunchid:63 @0/ 0: choice__0 ID=70 / top level operator
+ nexts= 0:avatar transition/ ID=79 1:avatar transition/ ID=85  in block Collision_Avoidance (silent)
+attributes=30 49 50 
+331 bunchid:63 @0/ 0: avatar transition ID=79 / top level operator
+ value:Transition (guard=distance<=threshold, ...)
+ nexts= 0:Waiting/ ID=77 
+speed = 0 / guard distance<=threshold /  in block Collision_Avoidance
+attributes=0 49 50 
+action#0: speed = 0 
+332 bunchid:64 @0/ 0: Waiting ID=77 / top level operator
+ nexts= 0:avatar transition/ ID=98  in block Collision_Avoidance (silent)
+attributes=0 49 50 
+333 bunchid:64 @0/ 0: avatar transition ID=126 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=119  in block Ultrasonic_Sensor
+attributes=49 
+334 bunchid:64 @0/ 0: random ID=119 / top level operator
+ nexts= 0:avatar transition/ ID=127  in block Ultrasonic_Sensor
+attributes=46 
+action#0: distance = 46 
+335 bunchid:65 @0/ 0: avatar transition ID=127 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=118  in block Ultrasonic_Sensor (silent)
+attributes=46 
+336 bunchid:65 @0/ 0: avatar transition ID=98 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=75  in block Collision_Avoidance
+attributes=0 49 50 
+337 bunchid:65 @0/ 0: action_on_signal:DC ID=75 / top level operator
+ nexts= 0:avatar transition/ ID=99  in block Collision_Avoidance
+attributes=0 49 50 
+338 bunchid:65 @0/ 0: avatar transition ID=116 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=108  in block DC_motor
+attributes=30 
+339 bunchid:65 @0/ 0: action_on_signal:DC ID=108 / top level operator
+ nexts= 0:avatar transition/ ID=117  in block DC_motor
+attributes=0 
+action#0: 0 
+340 bunchid:66 @0/ 0: avatar transition ID=99 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=74  in block Collision_Avoidance (silent)
+attributes=0 49 50 
+341 bunchid:66 @0/ 0: avatar transition ID=117 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=109  in block DC_motor (silent)
+attributes=0 
+342 bunchid:66 @0/ 0: busy ID=109 / top level operator
+ nexts= 0:avatar transition/ ID=113  in block DC_motor (silent)
+attributes=0 
+343 bunchid:66 @0/ 0: avatar transition ID=113 / top level operator
+ value:Empty transition
+ nexts= 0:Idle/ ID=110  in block DC_motor (silent)
+attributes=0 
+344 bunchid:66 @0/ 0: Idle ID=110 / top level operator
+ nexts= 0:avatar transition/ ID=116  in block DC_motor (silent)
+attributes=0 
+345 bunchid:66 @0/ 0: action_on_signal:US ID=118 / top level operator
+ nexts= 0:avatar transition/ ID=123  in block Ultrasonic_Sensor
+attributes=46 
+346 bunchid:66 @0/ 0: action_on_signal:US ID=74 / top level operator
+ nexts= 0:avatar transition/ ID=96  in block Collision_Avoidance
+attributes=0 46 50 
+action#0: 46 
+347 bunchid:67 @0/ 0: avatar transition ID=123 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=120  in block Ultrasonic_Sensor (silent)
+attributes=46 
+348 bunchid:67 @0/ 0: busy ID=120 / top level operator
+ nexts= 0:avatar transition/ ID=126  in block Ultrasonic_Sensor (silent)
+attributes=46 
+349 bunchid:67 @0/ 0: avatar transition ID=96 / top level operator
+ value:Empty transition
+ nexts= 0:choice__1/ ID=73  in block Collision_Avoidance (silent)
+attributes=0 46 50 
+350 bunchid:67 @0/ 0: choice__1 ID=73 / top level operator
+ nexts= 0:avatar transition/ ID=91 1:avatar transition/ ID=100  in block Collision_Avoidance (silent)
+attributes=0 46 50 
+351 bunchid:67 @0/ 0: avatar transition ID=126 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=119  in block Ultrasonic_Sensor
+attributes=46 
+352 bunchid:67 @0/ 0: random ID=119 / top level operator
+ nexts= 0:avatar transition/ ID=127  in block Ultrasonic_Sensor
+attributes=45 
+action#0: distance = 45 
+353 bunchid:68 @0/ 0: avatar transition ID=127 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=118  in block Ultrasonic_Sensor (silent)
+attributes=45 
+354 bunchid:68 @0/ 0: avatar transition ID=91 / top level operator
+ value:Transition (guard=distance<=threshold, ...)
+ nexts= 0:Waiting/ ID=77 
+speed = 0 / guard distance<=threshold /  in block Collision_Avoidance
+attributes=0 46 50 
+action#0: speed = 0 
+355 bunchid:69 @0/ 0: Waiting ID=77 / top level operator
+ nexts= 0:avatar transition/ ID=98  in block Collision_Avoidance (silent)
+attributes=0 46 50 
+356 bunchid:69 @0/ 0: avatar transition ID=98 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=75  in block Collision_Avoidance
+attributes=0 46 50 
+357 bunchid:69 @0/ 0: action_on_signal:DC ID=75 / top level operator
+ nexts= 0:avatar transition/ ID=99  in block Collision_Avoidance
+attributes=0 46 50 
+358 bunchid:69 @0/ 0: avatar transition ID=116 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=108  in block DC_motor
+attributes=0 
+359 bunchid:69 @0/ 0: action_on_signal:DC ID=108 / top level operator
+ nexts= 0:avatar transition/ ID=117  in block DC_motor
+attributes=0 
+action#0: 0 
+360 bunchid:70 @0/ 0: avatar transition ID=117 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=109  in block DC_motor (silent)
+attributes=0 
+361 bunchid:70 @0/ 0: avatar transition ID=99 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=74  in block Collision_Avoidance (silent)
+attributes=0 46 50 
+362 bunchid:70 @0/ 0: busy ID=109 / top level operator
+ nexts= 0:avatar transition/ ID=113  in block DC_motor (silent)
+attributes=0 
+363 bunchid:70 @0/ 0: avatar transition ID=113 / top level operator
+ value:Empty transition
+ nexts= 0:Idle/ ID=110  in block DC_motor (silent)
+attributes=0 
+364 bunchid:70 @0/ 0: Idle ID=110 / top level operator
+ nexts= 0:avatar transition/ ID=116  in block DC_motor (silent)
+attributes=0 
+365 bunchid:70 @0/ 0: action_on_signal:US ID=118 / top level operator
+ nexts= 0:avatar transition/ ID=123  in block Ultrasonic_Sensor
+attributes=45 
+366 bunchid:70 @0/ 0: action_on_signal:US ID=74 / top level operator
+ nexts= 0:avatar transition/ ID=96  in block Collision_Avoidance
+attributes=0 45 50 
+action#0: 45 
+367 bunchid:71 @0/ 0: avatar transition ID=123 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=120  in block Ultrasonic_Sensor (silent)
+attributes=45 
+368 bunchid:71 @0/ 0: avatar transition ID=96 / top level operator
+ value:Empty transition
+ nexts= 0:choice__1/ ID=73  in block Collision_Avoidance (silent)
+attributes=0 45 50 
+369 bunchid:71 @0/ 0: choice__1 ID=73 / top level operator
+ nexts= 0:avatar transition/ ID=91 1:avatar transition/ ID=100  in block Collision_Avoidance (silent)
+attributes=0 45 50 
+370 bunchid:71 @0/ 0: busy ID=120 / top level operator
+ nexts= 0:avatar transition/ ID=126  in block Ultrasonic_Sensor (silent)
+attributes=45 
+371 bunchid:71 @0/ 0: avatar transition ID=91 / top level operator
+ value:Transition (guard=distance<=threshold, ...)
+ nexts= 0:Waiting/ ID=77 
+speed = 0 / guard distance<=threshold /  in block Collision_Avoidance
+attributes=0 45 50 
+action#0: speed = 0 
+372 bunchid:72 @0/ 0: Waiting ID=77 / top level operator
+ nexts= 0:avatar transition/ ID=98  in block Collision_Avoidance (silent)
+attributes=0 45 50 
+373 bunchid:72 @0/ 0: avatar transition ID=98 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=75  in block Collision_Avoidance
+attributes=0 45 50 
+374 bunchid:72 @0/ 0: action_on_signal:DC ID=75 / top level operator
+ nexts= 0:avatar transition/ ID=99  in block Collision_Avoidance
+attributes=0 45 50 
+375 bunchid:72 @0/ 0: avatar transition ID=116 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=108  in block DC_motor
+attributes=0 
+376 bunchid:72 @0/ 0: action_on_signal:DC ID=108 / top level operator
+ nexts= 0:avatar transition/ ID=117  in block DC_motor
+attributes=0 
+action#0: 0 
+377 bunchid:73 @0/ 0: avatar transition ID=117 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=109  in block DC_motor (silent)
+attributes=0 
+378 bunchid:73 @0/ 0: busy ID=109 / top level operator
+ nexts= 0:avatar transition/ ID=113  in block DC_motor (silent)
+attributes=0 
+379 bunchid:73 @0/ 0: avatar transition ID=99 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=74  in block Collision_Avoidance (silent)
+attributes=0 45 50 
+380 bunchid:73 @0/ 0: avatar transition ID=113 / top level operator
+ value:Empty transition
+ nexts= 0:Idle/ ID=110  in block DC_motor (silent)
+attributes=0 
+381 bunchid:73 @0/ 0: Idle ID=110 / top level operator
+ nexts= 0:avatar transition/ ID=116  in block DC_motor (silent)
+attributes=0 
+382 bunchid:73 @0/ 0: avatar transition ID=126 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=119  in block Ultrasonic_Sensor
+attributes=45 
+383 bunchid:73 @0/ 0: random ID=119 / top level operator
+ nexts= 0:avatar transition/ ID=127  in block Ultrasonic_Sensor
+attributes=46 
+action#0: distance = 46 
+384 bunchid:74 @0/ 0: avatar transition ID=127 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=118  in block Ultrasonic_Sensor (silent)
+attributes=46 
+385 bunchid:74 @0/ 0: action_on_signal:US ID=118 / top level operator
+ nexts= 0:avatar transition/ ID=123  in block Ultrasonic_Sensor
+attributes=46 
+386 bunchid:74 @0/ 0: action_on_signal:US ID=74 / top level operator
+ nexts= 0:avatar transition/ ID=96  in block Collision_Avoidance
+attributes=0 46 50 
+action#0: 46 
+387 bunchid:75 @0/ 0: avatar transition ID=123 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=120  in block Ultrasonic_Sensor (silent)
+attributes=46 
+388 bunchid:75 @0/ 0: busy ID=120 / top level operator
+ nexts= 0:avatar transition/ ID=126  in block Ultrasonic_Sensor (silent)
+attributes=46 
+389 bunchid:75 @0/ 0: avatar transition ID=96 / top level operator
+ value:Empty transition
+ nexts= 0:choice__1/ ID=73  in block Collision_Avoidance (silent)
+attributes=0 46 50 
+390 bunchid:75 @0/ 0: choice__1 ID=73 / top level operator
+ nexts= 0:avatar transition/ ID=91 1:avatar transition/ ID=100  in block Collision_Avoidance (silent)
+attributes=0 46 50 
+391 bunchid:75 @0/ 0: avatar transition ID=91 / top level operator
+ value:Transition (guard=distance<=threshold, ...)
+ nexts= 0:Waiting/ ID=77 
+speed = 0 / guard distance<=threshold /  in block Collision_Avoidance
+attributes=0 46 50 
+action#0: speed = 0 
+392 bunchid:76 @0/ 0: Waiting ID=77 / top level operator
+ nexts= 0:avatar transition/ ID=98  in block Collision_Avoidance (silent)
+attributes=0 46 50 
+393 bunchid:76 @0/ 0: avatar transition ID=126 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=119  in block Ultrasonic_Sensor
+attributes=46 
+394 bunchid:76 @0/ 0: random ID=119 / top level operator
+ nexts= 0:avatar transition/ ID=127  in block Ultrasonic_Sensor
+attributes=45 
+action#0: distance = 45 
+395 bunchid:77 @0/ 0: avatar transition ID=127 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=118  in block Ultrasonic_Sensor (silent)
+attributes=45 
+396 bunchid:77 @0/ 0: avatar transition ID=98 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=75  in block Collision_Avoidance
+attributes=0 46 50 
+397 bunchid:77 @0/ 0: action_on_signal:DC ID=75 / top level operator
+ nexts= 0:avatar transition/ ID=99  in block Collision_Avoidance
+attributes=0 46 50 
+398 bunchid:77 @0/ 0: avatar transition ID=116 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=108  in block DC_motor
+attributes=0 
+399 bunchid:77 @0/ 0: action_on_signal:DC ID=108 / top level operator
+ nexts= 0:avatar transition/ ID=117  in block DC_motor
+attributes=0 
+action#0: 0 
+400 bunchid:78 @0/ 0: avatar transition ID=117 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=109  in block DC_motor (silent)
+attributes=0 
+401 bunchid:78 @0/ 0: busy ID=109 / top level operator
+ nexts= 0:avatar transition/ ID=113  in block DC_motor (silent)
+attributes=0 
+402 bunchid:78 @0/ 0: avatar transition ID=113 / top level operator
+ value:Empty transition
+ nexts= 0:Idle/ ID=110  in block DC_motor (silent)
+attributes=0 
+403 bunchid:78 @0/ 0: avatar transition ID=99 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=74  in block Collision_Avoidance (silent)
+attributes=0 46 50 
+404 bunchid:78 @0/ 0: Idle ID=110 / top level operator
+ nexts= 0:avatar transition/ ID=116  in block DC_motor (silent)
+attributes=0 
+405 bunchid:78 @0/ 0: action_on_signal:US ID=118 / top level operator
+ nexts= 0:avatar transition/ ID=123  in block Ultrasonic_Sensor
+attributes=45 
+406 bunchid:78 @0/ 0: action_on_signal:US ID=74 / top level operator
+ nexts= 0:avatar transition/ ID=96  in block Collision_Avoidance
+attributes=0 45 50 
+action#0: 45 
+407 bunchid:79 @0/ 0: avatar transition ID=96 / top level operator
+ value:Empty transition
+ nexts= 0:choice__1/ ID=73  in block Collision_Avoidance (silent)
+attributes=0 45 50 
+408 bunchid:79 @0/ 0: choice__1 ID=73 / top level operator
+ nexts= 0:avatar transition/ ID=91 1:avatar transition/ ID=100  in block Collision_Avoidance (silent)
+attributes=0 45 50 
+409 bunchid:79 @0/ 0: avatar transition ID=123 / top level operator
+ value:Empty transition
+ nexts= 0:busy/ ID=120  in block Ultrasonic_Sensor (silent)
+attributes=45 
+410 bunchid:79 @0/ 0: busy ID=120 / top level operator
+ nexts= 0:avatar transition/ ID=126  in block Ultrasonic_Sensor (silent)
+attributes=45 
+411 bunchid:79 @0/ 0: avatar transition ID=126 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=119  in block Ultrasonic_Sensor
+attributes=45 
+412 bunchid:79 @0/ 0: random ID=119 / top level operator
+ nexts= 0:avatar transition/ ID=127  in block Ultrasonic_Sensor
+attributes=55 
+action#0: distance = 55 
+413 bunchid:80 @0/ 0: avatar transition ID=127 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=118  in block Ultrasonic_Sensor (silent)
+attributes=55 
+414 bunchid:80 @0/ 0: avatar transition ID=91 / top level operator
+ value:Transition (guard=distance<=threshold, ...)
+ nexts= 0:Waiting/ ID=77 
+speed = 0 / guard distance<=threshold /  in block Collision_Avoidance
+attributes=0 45 50 
+action#0: speed = 0 
+415 bunchid:81 @0/ 0: Waiting ID=77 / top level operator
+ nexts= 0:avatar transition/ ID=98  in block Collision_Avoidance (silent)
+attributes=0 45 50 
