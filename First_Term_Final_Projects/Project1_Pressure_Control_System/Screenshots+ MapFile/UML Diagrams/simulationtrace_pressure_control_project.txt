@@ -1,0 +1,260 @@
+0 bunchid:0 @0/ 0: start ID=344 / top level operator
+ nexts= 0:avatar transition/ ID=346  in block LED (silent)
+attributes=60 
+1 bunchid:0 @0/ 0: start ID=354 / top level operator
+ nexts= 0:avatar transition/ ID=362  in block Alarm_Monitor (silent)
+attributes=0 20 60 
+2 bunchid:0 @0/ 0: start ID=375 / top level operator
+ nexts= 0:avatar transition/ ID=378  in block Pressure_Sensor (silent)
+attributes=0 
+3 bunchid:0 @0/ 0: avatar transition ID=346 / top level operator
+ value:Empty transition
+ nexts= 0:init/ ID=343  in block LED (silent)
+attributes=60 
+4 bunchid:0 @0/ 0: init ID=343 / top level operator
+ nexts= 0:avatar transition/ ID=347  in block LED (silent)
+attributes=60 
+5 bunchid:0 @0/ 0: avatar transition ID=347 / top level operator
+ value:Empty transition
+ nexts= 0:waiting/ ID=341  in block LED (silent)
+attributes=60 
+6 bunchid:0 @0/ 0: waiting ID=341 / top level operator
+ nexts= 0:avatar transition/ ID=348  in block LED (silent)
+attributes=60 
+7 bunchid:0 @0/ 0: avatar transition ID=362 / top level operator
+ value:Empty transition
+ nexts= 0:waiting/ ID=353  in block Alarm_Monitor (silent)
+attributes=0 20 60 
+8 bunchid:0 @0/ 0: waiting ID=353 / top level operator
+ nexts= 0:avatar transition/ ID=363  in block Alarm_Monitor (silent)
+attributes=0 20 60 
+9 bunchid:0 @0/ 0: avatar transition ID=378 / top level operator
+ value:Empty transition
+ nexts= 0:init/ ID=374  in block Pressure_Sensor (silent)
+attributes=0 
+10 bunchid:0 @0/ 0: init ID=374 / top level operator
+ nexts= 0:avatar transition/ ID=380  in block Pressure_Sensor (silent)
+attributes=0 
+11 bunchid:0 @0/ 0: avatar transition ID=380 / top level operator
+ value:Empty transition
+ nexts= 0:waiting/ ID=371  in block Pressure_Sensor (silent)
+attributes=0 
+12 bunchid:0 @0/ 0: waiting ID=371 / top level operator
+ nexts= 0:avatar transition/ ID=376  in block Pressure_Sensor (silent)
+attributes=0 
+13 bunchid:0 @0/ 0: avatar transition ID=376 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=373  in block Pressure_Sensor
+attributes=0 
+14 bunchid:0 @0/ 0: random ID=373 / top level operator
+ nexts= 0:avatar transition/ ID=379  in block Pressure_Sensor
+attributes=18 
+action#0: val = 18 
+15 bunchid:1 @0/ 0: avatar transition ID=379 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=372  in block Pressure_Sensor (silent)
+attributes=18 
+16 bunchid:1 @0/ 0: action_on_signal:readSensorVal ID=372 / top level operator
+ nexts= 0:avatar transition/ ID=377  in block Pressure_Sensor
+attributes=18 
+17 bunchid:1 @0/ 0: avatar transition ID=363 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=352  in block Alarm_Monitor
+attributes=0 20 60 
+18 bunchid:1 @0/ 0: action_on_signal:readSensorVal ID=352 / top level operator
+ nexts= 0:avatar transition/ ID=364  in block Alarm_Monitor
+attributes=18 20 60 
+action#0: 18 
+19 bunchid:2 @0/ 0: avatar transition ID=364 / top level operator
+ value:Empty transition
+ nexts= 0:choice__0/ ID=351  in block Alarm_Monitor (silent)
+attributes=18 20 60 
+20 bunchid:2 @0/ 0: choice__0 ID=351 / top level operator
+ nexts= 0:avatar transition/ ID=356 1:avatar transition/ ID=365  in block Alarm_Monitor (silent)
+attributes=18 20 60 
+21 bunchid:2 @0/ 0: avatar transition ID=377 / top level operator
+ value:Empty transition
+ nexts= 0:waiting/ ID=371  in block Pressure_Sensor (silent)
+attributes=18 
+22 bunchid:2 @0/ 0: waiting ID=371 / top level operator
+ nexts= 0:avatar transition/ ID=376  in block Pressure_Sensor (silent)
+attributes=18 
+23 bunchid:2 @0/ 0: avatar transition ID=356 / top level operator
+ value:Transition (guard=val<threshold, ...)
+ nexts= 0:waiting/ ID=353 
+alarmDuration = 0 / guard val<threshold /  in block Alarm_Monitor
+attributes=18 20 0 
+action#0: alarmDuration = 0 
+24 bunchid:3 @0/ 0: waiting ID=353 / top level operator
+ nexts= 0:avatar transition/ ID=363  in block Alarm_Monitor (silent)
+attributes=18 20 0 
+25 bunchid:3 @0/ 0: avatar transition ID=376 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=373  in block Pressure_Sensor
+attributes=18 
+26 bunchid:3 @0/ 0: random ID=373 / top level operator
+ nexts= 0:avatar transition/ ID=379  in block Pressure_Sensor
+attributes=18 
+action#0: val = 18 
+27 bunchid:4 @0/ 0: avatar transition ID=379 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=372  in block Pressure_Sensor (silent)
+attributes=18 
+28 bunchid:4 @0/ 0: action_on_signal:readSensorVal ID=372 / top level operator
+ nexts= 0:avatar transition/ ID=377  in block Pressure_Sensor
+attributes=18 
+29 bunchid:4 @0/ 0: avatar transition ID=363 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=352  in block Alarm_Monitor
+attributes=18 20 0 
+30 bunchid:4 @0/ 0: action_on_signal:readSensorVal ID=352 / top level operator
+ nexts= 0:avatar transition/ ID=364  in block Alarm_Monitor
+attributes=18 20 0 
+action#0: 18 
+31 bunchid:5 @0/ 0: avatar transition ID=364 / top level operator
+ value:Empty transition
+ nexts= 0:choice__0/ ID=351  in block Alarm_Monitor (silent)
+attributes=18 20 0 
+32 bunchid:5 @0/ 0: avatar transition ID=377 / top level operator
+ value:Empty transition
+ nexts= 0:waiting/ ID=371  in block Pressure_Sensor (silent)
+attributes=18 
+33 bunchid:5 @0/ 0: choice__0 ID=351 / top level operator
+ nexts= 0:avatar transition/ ID=356 1:avatar transition/ ID=365  in block Alarm_Monitor (silent)
+attributes=18 20 0 
+34 bunchid:5 @0/ 0: waiting ID=371 / top level operator
+ nexts= 0:avatar transition/ ID=376  in block Pressure_Sensor (silent)
+attributes=18 
+35 bunchid:5 @0/ 0: avatar transition ID=376 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=373  in block Pressure_Sensor
+attributes=18 
+36 bunchid:5 @0/ 0: random ID=373 / top level operator
+ nexts= 0:avatar transition/ ID=379  in block Pressure_Sensor
+attributes=24 
+action#0: val = 24 
+37 bunchid:6 @0/ 0: avatar transition ID=379 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=372  in block Pressure_Sensor (silent)
+attributes=24 
+38 bunchid:6 @0/ 0: avatar transition ID=356 / top level operator
+ value:Transition (guard=val<threshold, ...)
+ nexts= 0:waiting/ ID=353 
+alarmDuration = 0 / guard val<threshold /  in block Alarm_Monitor
+attributes=18 20 0 
+action#0: alarmDuration = 0 
+39 bunchid:7 @0/ 0: waiting ID=353 / top level operator
+ nexts= 0:avatar transition/ ID=363  in block Alarm_Monitor (silent)
+attributes=18 20 0 
+40 bunchid:7 @0/ 0: action_on_signal:readSensorVal ID=372 / top level operator
+ nexts= 0:avatar transition/ ID=377  in block Pressure_Sensor
+attributes=24 
+41 bunchid:7 @0/ 0: avatar transition ID=363 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=352  in block Alarm_Monitor
+attributes=18 20 0 
+42 bunchid:7 @0/ 0: action_on_signal:readSensorVal ID=352 / top level operator
+ nexts= 0:avatar transition/ ID=364  in block Alarm_Monitor
+attributes=24 20 0 
+action#0: 24 
+43 bunchid:8 @0/ 0: avatar transition ID=377 / top level operator
+ value:Empty transition
+ nexts= 0:waiting/ ID=371  in block Pressure_Sensor (silent)
+attributes=24 
+44 bunchid:8 @0/ 0: waiting ID=371 / top level operator
+ nexts= 0:avatar transition/ ID=376  in block Pressure_Sensor (silent)
+attributes=24 
+45 bunchid:8 @0/ 0: avatar transition ID=364 / top level operator
+ value:Empty transition
+ nexts= 0:choice__0/ ID=351  in block Alarm_Monitor (silent)
+attributes=24 20 0 
+46 bunchid:8 @0/ 0: choice__0 ID=351 / top level operator
+ nexts= 0:avatar transition/ ID=356 1:avatar transition/ ID=365  in block Alarm_Monitor (silent)
+attributes=24 20 0 
+47 bunchid:8 @0/ 0: avatar transition ID=365 / top level operator
+ value:Transition (guard=val>threshold, ...)
+ nexts= 0:action_on_signal/ ID=350 
+alarmDuration = 60 / guard val>threshold /  in block Alarm_Monitor
+attributes=24 20 60 
+action#0: alarmDuration = 60 
+48 bunchid:9 @0/ 0: avatar transition ID=376 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=373  in block Pressure_Sensor
+attributes=24 
+49 bunchid:9 @0/ 0: random ID=373 / top level operator
+ nexts= 0:avatar transition/ ID=379  in block Pressure_Sensor
+attributes=20 
+action#0: val = 20 
+50 bunchid:10 @0/ 0: avatar transition ID=379 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=372  in block Pressure_Sensor (silent)
+attributes=20 
+51 bunchid:10 @0/ 0: action_on_signal:startAlarm ID=350 / top level operator
+ nexts= 0:avatar transition/ ID=355  in block Alarm_Monitor
+attributes=24 20 60 
+52 bunchid:10 @0/ 0: avatar transition ID=348 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=342  in block LED
+attributes=60 
+53 bunchid:10 @0/ 0: action_on_signal:startAlarm ID=342 / top level operator
+ nexts= 0:avatar transition/ ID=349  in block LED
+attributes=60 
+action#0: 60 
+54 bunchid:11 @0/ 0: avatar transition ID=349 / top level operator
+ value:Empty transition
+ nexts= 0:start_timer/ ID=340  in block LED (silent)
+attributes=60 
+55 bunchid:11 @0/ 0: start_timer ID=340 / top level operator
+ nexts= 0:avatar transition/ ID=345  in block LED (silent)
+attributes=60 
+56 bunchid:11 @0/ 0: avatar transition ID=355 / top level operator
+ value:Empty transition
+ nexts= 0:waiting/ ID=353  in block Alarm_Monitor (silent)
+attributes=24 20 60 
+57 bunchid:11 @0/ 0: waiting ID=353 / top level operator
+ nexts= 0:avatar transition/ ID=363  in block Alarm_Monitor (silent)
+attributes=24 20 60 
+58 bunchid:11 @0/ 0: avatar transition ID=345 / top level operator
+ value:Empty transition
+ nexts= 0:waiting/ ID=341  in block LED (silent)
+attributes=60 
+59 bunchid:11 @0/ 0: waiting ID=341 / top level operator
+ nexts= 0:avatar transition/ ID=348  in block LED (silent)
+attributes=60 
+60 bunchid:11 @0/ 0: action_on_signal:readSensorVal ID=372 / top level operator
+ nexts= 0:avatar transition/ ID=377  in block Pressure_Sensor
+attributes=20 
+61 bunchid:11 @0/ 0: avatar transition ID=363 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=352  in block Alarm_Monitor
+attributes=24 20 60 
+62 bunchid:11 @0/ 0: action_on_signal:readSensorVal ID=352 / top level operator
+ nexts= 0:avatar transition/ ID=364  in block Alarm_Monitor
+attributes=20 20 60 
+action#0: 20 
+63 bunchid:12 @0/ 0: avatar transition ID=364 / top level operator
+ value:Empty transition
+ nexts= 0:choice__0/ ID=351  in block Alarm_Monitor (silent)
+attributes=20 20 60 
+64 bunchid:12 @0/ 0: avatar transition ID=377 / top level operator
+ value:Empty transition
+ nexts= 0:waiting/ ID=371  in block Pressure_Sensor (silent)
+attributes=20 
+65 bunchid:12 @0/ 0: choice__0 ID=351 / top level operator
+ nexts= 0:avatar transition/ ID=356 1:avatar transition/ ID=365  in block Alarm_Monitor (silent)
+attributes=20 20 60 
+66 bunchid:12 @0/ 0: waiting ID=371 / top level operator
+ nexts= 0:avatar transition/ ID=376  in block Pressure_Sensor (silent)
+attributes=20 
+67 bunchid:12 @0/ 0: avatar transition ID=376 / top level operator
+ value:Empty transition
+ nexts= 0:random/ ID=373  in block Pressure_Sensor
+attributes=20 
+68 bunchid:12 @0/ 0: random ID=373 / top level operator
+ nexts= 0:avatar transition/ ID=379  in block Pressure_Sensor
+attributes=24 
+action#0: val = 24 
+69 bunchid:13 @0/ 0: avatar transition ID=379 / top level operator
+ value:Empty transition
+ nexts= 0:action_on_signal/ ID=372  in block Pressure_Sensor (silent)
+attributes=24 
