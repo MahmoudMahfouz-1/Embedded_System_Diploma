@@ -1,5 +1,5 @@
 # Makefile for ARM-CortexM3
-# Eng.Mahmoud
+# Eng.Mahmoud Essam
 CC=arm-none-eabi-
 CFLAGS=-mcpu=cortex-m3 -gdwarf-2
 INCS=-I .

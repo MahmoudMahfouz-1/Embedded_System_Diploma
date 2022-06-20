@@ -1,6 +1,5 @@
 // Startup.c
 // Eng.Mahmoud Essam
-#define Stack_Top 0x20001000
 #include "stdint.h"
 void Reset_Handler(void);
 void Defaut_Handler(void);
@@ -46,7 +45,7 @@ void Reset_Handler(void)
 	// Init .bss section
 	unsigned int BSS_size = (unsigned char*)&_E_BSS_ - (unsigned char*)&_S_BSS_ ;
 	p_dst = (unsigned char*)&_S_BSS_;
-	for(int i = 0; i < DATA_size ; i++)
+	for(int i = 0; i < BSS_size ; i++)
 	{
 		*p_dst++ = (unsigned char)0;
 	}

@@ -1,7 +1,7 @@
 /*
-  Linker_script.ld File
-  Eng.Mahmoud Essam
-  */
+	  Linker_script.ld File
+	  Eng.Mahmoud Essam
+ */
 
 
 
