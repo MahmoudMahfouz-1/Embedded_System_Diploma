@@ -126,60 +126,7 @@ void MCAL_GPIO_Init(GPIO_Typedef *GPIOx, GPIO_PinConfig* PinConfig)
 
 
 }
-//void MCAL_GPIO_Init (GPIO_Typedef *GPIOx, GPIO_PinConfig *PinConfig)
-//{
-//	//Port configuration register low (GPIOx_CRL)  0 >>> 7
-//	//Port configuration register high (GPIOx_CRH) 8 >>> 15
-//	uint32_t *config_reg = NULL; // To store which register for the input pin number
-//
-//	uint8_t PIN_CONFIG = 0 ; // To store the pin configuration
-//
-//	// Check if the input GPIO is bigger than bit number 8 to return the correct register for it
-//	config_reg = (PinConfig->GPIO_PinNumber < GPIO_PIN_8) ? &GPIOx->CRL : &GPIOx->CRH; // Return the register (Low or High)
-//
-//	// Clear CNF8[1:0] MODE8[1:0]
-//	(*config_reg) &= ~(0xF << Get_CRLH_Position(PinConfig->GPIO_PinNumber));
-//
-//	// If pin is output
-//	if(PinConfig->GPIO_MODE == GPIO_MODE_OUTPUT_ALT_OD || PinConfig->GPIO_MODE == GPIO_MODE_OUTPUT_ALT_PP || PinConfig->GPIO_MODE == GPIO_MODE_OUTPUT_OD || PinConfig->GPIO_MODE == GPIO_MODE_OUTPUT_PP  )
-//	{
-//		// Set CNF8[1:0] MODE8[1:0]
-//		PIN_CONFIG = ((((PinConfig->GPIO_MODE - 4) << 2)|(PinConfig->GPIO_Output_Speed)) & 0x0F); // "-4" > for definition on .h file  and "& 0x0F" > for neglect all remaining bits
-//
-//	}
-//	// If pin is input
-//	else //00: Input mode (reset state)
-//	{
-//		if((PinConfig->GPIO_MODE == GPIO_MODE_ANALOG)||(PinConfig->GPIO_MODE == GPIO_MODE_INPUT_FLO))
-//		{
-//			// Set CNF8[1:0] MODE8[1:0] 00
-//			PIN_CONFIG = ((((PinConfig->GPIO_MODE) << 2)|(0x0)) & 0x0F); // "-4" > for definition on .h file  and "& 0x0F" > for neglect all remaining bits
-//		}
-//		else if (PinConfig->GPIO_MODE == GPIO_MODE_ALT_INPUT) // Considered that GPIO_MODE_AF_INPUT = GPIO_MODE_INPUT_FLO in data sheet
-//		{
-//			PIN_CONFIG = ((((GPIO_MODE_INPUT_FLO) << 2)|(0x0)) & 0x0F); // "-4" > for definition on .h file  and "& 0x0F" > for neglect all remaining bits
-//		}
-//		else // Pull-up / Pull-Down Input
-//		{
-//			// GPIO_MODE_INPUT_PU == 0b10 as Table 20. Port bit configuration table
-//			PIN_CONFIG = ((((GPIO_MODE_INPUT_PU) << 2)|(0x0)) & 0x0F); // "-4" > for definition on .h file  and "& 0x0F" > for neglect all remaining bits
-//
-//			if(PinConfig->GPIO_MODE == GPIO_MODE_INPUT_PU)
-//			{
-//				// PxODR = 1 Input pull-up: Table 20. Port bit configuration table
-//				GPIOx->ODR |= PinConfig->GPIO_PinNumber;
-//			}
-//			else
-//			{
-//				// PxODR = 0 Input pull-down: Table 20. Port bit configuration table
-//				GPIOx->ODR &= ~(PinConfig->GPIO_PinNumber);
-//			}
-//		}
-//	}
-//	// Write on CRL or CRH
-//	(*config_reg) |= (PIN_CONFIG << Get_CRLH_Position(PinConfig->GPIO_PinNumber));
-//}
-//
+
 
 
 /**================================================================
