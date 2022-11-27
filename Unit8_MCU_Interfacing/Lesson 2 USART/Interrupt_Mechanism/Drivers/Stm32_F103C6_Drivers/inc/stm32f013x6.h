@@ -225,9 +225,9 @@ typedef struct
 #define NVIC_IRQ6_EXTI10_15_Enable 		(NVIC_ISER1 |= (1<<8))  //40-32 = 8
 
 //USART Enable Macros
-#define NVIC_IRQ37_USART1_Enable 		(NVIC_ISER1 |= (1<< (USART1_IRQ - 8)))  //37-32 = 8
-#define NVIC_IRQ38_USART2_Enable 		(NVIC_ISER1 |= (1<< (USART2_IRQ - 8)))  //38-32 = 8
-#define NVIC_IRQ39_USART3_Enable 		(NVIC_ISER1 |= (1<< (USART3_IRQ - 8)))  //39-32 = 8
+#define NVIC_IRQ37_USART1_Enable 		(NVIC_ISER1 |= (1<< (USART1_IRQ - 32)))  //37-32 = 8
+#define NVIC_IRQ38_USART2_Enable 		(NVIC_ISER1 |= (1<< (USART2_IRQ - 32)))  //38-32 = 8
+#define NVIC_IRQ39_USART3_Enable 		(NVIC_ISER1 |= (1<< (USART3_IRQ - 32)))  //39-32 = 8
 
 //Disable Macros
 #define NVIC_IRQ6_EXTI0_Disable 			(NVIC_ICER0 |= (1<<6))
@@ -239,9 +239,9 @@ typedef struct
 #define NVIC_IRQ6_EXTI10_15_Disable 		(NVIC_ICER1 |= (1<<8))  //40-32 = 8
 
 //USART Disable Macros
-#define NVIC_IRQ37_USART1_Disable  		(NVIC_ICER1 |= (1<< (USART1_IRQ - 8)))  //37-32 = 8
-#define NVIC_IRQ38_USART2_Disable 		(NVIC_ICER1 |= (1<< (USART2_IRQ - 8)))  //38-32 = 8
-#define NVIC_IRQ39_USART3_Disable    	(NVIC_ICER1 |= (1<< (USART3_IRQ - 8)))  //39-32 = 8
+#define NVIC_IRQ37_USART1_Disable  		(NVIC_ICER1 |= (1<< (USART1_IRQ - 32)))  //37-32 = 8
+#define NVIC_IRQ38_USART2_Disable 		(NVIC_ICER1 |= (1<< (USART2_IRQ - 32)))  //38-32 = 8
+#define NVIC_IRQ39_USART3_Disable    	(NVIC_ICER1 |= (1<< (USART3_IRQ - 32)))  //39-32 = 8
 
 
 //===============================================
