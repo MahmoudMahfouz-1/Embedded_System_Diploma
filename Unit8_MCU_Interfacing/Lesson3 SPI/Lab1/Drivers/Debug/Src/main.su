@@ -1,0 +1,4 @@
+../Src/main.c:40:6:clock_init	4	static
+../Src/main.c:54:6:Mahmoud_SPI1_IRQ_Callback	16	static
+../Src/main.c:66:6:Mahmoud_UART_IRQ_CallBack	4	static
+../Src/main.c:79:5:main	56	static
